@@ -3,5 +3,5 @@
 Sebastian Perez Bello  
 Yerson Andreu Bernal Andrade  
 Evelyn Paola Rios Usma  
-Juan Esteban Giraldo Zuluaga
+Juan Esteban Giraldo Zuluaga  
 Daniel Yesid Murillo Morales
