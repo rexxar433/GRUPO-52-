@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+    />
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}" />
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     <title>Iniciar Sesion</title>
 </head>
 <body>
-    
+<table class="table table-dark table-striped">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Email</th>
+        <th scope="col">Contraseña</th>
+        <th scope="col">Rol</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="usuario,i : ${usuarios}">
+        <th scope="row" th:text="${i.index}"></th>
+        <td th:text="${usuario.primer_nombre}"></td>
+        <td th:text="${usuario.primer_apellido}"></td>
+        <td th:text="${usuario.email}"></td>
+        <td th:text="${usuario.contrasena}"></td>
+        <td th:text="${usuario.rol_id}"></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

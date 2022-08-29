@@ -11,7 +11,7 @@ import java.io.Serializable;
 public class Clasificacion implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @NotEmpty(message="Por favor agregue un nombre a la clasficacion.")
     @Size(max=45, message="No se puede colocar un nombre tan largo.")
@@ -21,11 +21,11 @@ public class Clasificacion implements Serializable {
     @Column(name="edad_minima")
     private String edadMinima;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
