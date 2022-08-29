@@ -36,7 +36,8 @@ public class Usuario implements Serializable {
     @Column(name="fecha_nacimiento")
     private Date nacimiento;
 
-    private int edad;
+    private int edad; // Da error
+    // Null value was assigned to a property [class edu.utp.service.movie.model.Usuario.edad] of primitive type setter of edu.utp.service.movie.model.Usuario.edad] with root cause
 
     @NotEmpty(message="Por favor agregue un titulo")
     @Size(min=1, max=70, message="El segundo apellido no es valido")
