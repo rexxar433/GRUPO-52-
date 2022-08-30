@@ -36,7 +36,7 @@ public class Usuario implements Serializable {
     @Column(name="fecha_nacimiento")
     private Date nacimiento;
 
-    private int edad;
+    private Integer edad;
 
     @NotEmpty(message="Por favor agregue un titulo")
     @Size(min=1, max=70, message="El segundo apellido no es valido")

@@ -16,27 +16,6 @@
     <title>Iniciar Sesion</title>
 </head>
 <body>
-<table class="table table-dark table-striped">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">Item</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Apellido</th>
-        <th scope="col">Email</th>
-        <th scope="col">Contraseña</th>
-        <th scope="col">Rol</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="usuario,i : ${usuarios}">
-        <th scope="row" th:text="${i.index}"></th>
-        <td th:text="${usuario.primer_nombre}"></td>
-        <td th:text="${usuario.primer_apellido}"></td>
-        <td th:text="${usuario.email}"></td>
-        <td th:text="${usuario.contrasena}"></td>
-        <td th:text="${usuario.rol_id}"></td>
-    </tr>
-    </tbody>
-</table>
+<p>Prueba iniciar Sesion</p>
 </body>
 </html>

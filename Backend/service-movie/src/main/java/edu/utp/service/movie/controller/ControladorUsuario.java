@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 @Slf4j
@@ -20,4 +21,10 @@ public class ControladorUsuario {
         model.addAttribute("usuarios",usuarios);
         return "Login";
     }
+    @GetMapping("/registrar")
+    public String register(Model model){
+
+        return "CreateUser";
+    }
+
 }
