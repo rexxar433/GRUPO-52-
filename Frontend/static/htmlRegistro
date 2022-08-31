@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" type="image/x-icon" href="ImagenesR/Icono.jpg">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<header>
+    <nav>
+        <ul class="main-nav">
+            <li class="main-nav__item"> <a href="https://www.google.com"  target="_blank">Página Principal</a>  </li>  
+            <li class="main-nav__item"> <a href="https://www.google.com"  target="_blank">Iniciar Sesión</a>  </li>
+        </ul>
+    </nav>
+</header>
+<body>
+<main>
+    <div class="myDiv">
+        <h1>Registrate</h1>
+    </div>
+   <div>
+    <form>
+        <ul class="main-navt">
+            <li>
+                
+                <label for="Nombre de Usuario"></label>
+                    <input type="text" id="Nombre de Usuario" name="Nombre de Usuario" required autocomplete=none placeholder="Nombre de Usuario"/>
+                <label for="Primer Nombre"></label><br></li>
+                <li><label for="Primer Nombre"></label><br>
+                    <input type="text" id="Primer Nombre" name="Primer Nombre" placeholder="Primer Nombre" autocomplete=none required/><br></li>
+                <li><label for="Segundo Nombre"></label><br>
+                    <input type="text" id="Segundo Nombre" name="Segundo Nombre" placeholder="Segundo Nombre" autocomplete=none required/><br></li>
+                <li><label for="Primer Apellido"></label><br>
+                    <input type="text" id="Primer Apellido" name="Primer Apellido" placeholder="Primer Apellido" autocomplete=none required/><br></li>
+                <li><label for="Segundo Apellido"></label><br>
+                    <input type="text" id="Segundo Apellido" name="Segundo Apellido" placeholder="Segundo Apellido" autocomplete=none required/><br></li>
+                <li><label for="Contraseña"></label><br>
+                    <input type="password" id="Contraseña" placeholder="Contraseña" autocomplete=none required/><br></li>
+                <li><label for="Edad"></label><br>
+                    <input type="number" id="Edad" name="Edad" placeholder="Edad" autocomplete=none required/><br></li>
+                <li><label for="Fecha de Nacimiento"></label><br>
+                    <input class="input100"  type="text" name="Fecha de Nacimiento" autocomplete=none placeholder="Fecha de Nacimiento" onclick="ocultarError();" onfocus="(this.type='date')" onblur="(this.type='text')" required/><br></li>
+                <li><label for="Correo Electrónico"></label><br>
+                    <input type="email" id="Correo Electrónico" name="Correo Electrónico" autocomplete=none placeholder="Correo Electrónico" required/><br></li>
+                <li><label for="Registrarse"></label><br>
+                    <input type="submit" value="Registrarse"><br></li>
+
+        </ul>
+    </form>
+   </div>
+      
+</main>
+</body>
+</html>
