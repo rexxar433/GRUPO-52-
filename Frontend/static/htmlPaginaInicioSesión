@@ -14,7 +14,6 @@
         <ul class="main-nav">
             <li class="main-nav__item"> <a href="https://www.google.com"  target="_blank">Página Principal</a>  </li>  
             <li class="main-nav__item"> <a href="https://www.google.com"  target="_blank">Registrarse</a>  </li>
-            <li class="main-nav__item"> <a href="https://www.google.com"  target="_blank">Calificar Película</a> </li>
         </ul>
     </nav>
 </header>
@@ -33,6 +32,7 @@
             <input type="text" id="Nombre de Usuario" name="Nombre de Usuario" required/><br>
             <label for="Contraseña">Contraseña:</label><br>
             <input type="password" id="Contraseña" required><br>
+            <label for="Co"></label><br>
             <input type="submit" value="Iniciar Sesión"><br>
         </form>
     </div>   
