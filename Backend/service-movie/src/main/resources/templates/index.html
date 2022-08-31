@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+    />
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}" />
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     <title>PeliReview</title>
 </head>
 <body>
-    
+<nav class="nav">
+    <a class="nav-link active" href="/">Inicio</a>
+    <a class="nav-link" href="#">Categorias</a>
+</nav>
+<div class="container">
+    <!--justify-content-md-center-->
+    <div class="row row-cols-1">
+        <div th:each="pelicula,i : ${peliculas}" class="col card " style="width: 18rem;">
+            <img class="card-img-top" th:src="@{/images/descarga.svg}" alt="Card image cap">
+            <div class="card-body">
+                <h5 th:text="${pelicula.titulo}" class="card-title"></h5>
+                <p th:text="${pelicula.argumento}" class="card-text"></p>
+                Duracion(minutos): <p th:text="${pelicula.duracion}"></p>
+                <a href="#" class="btn btn-primary">Ver sinopsis</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>

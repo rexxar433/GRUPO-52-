@@ -14,7 +14,7 @@ public class Pelicula implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 
 	@NotEmpty(message="Por favor agregue un titulo")
 	@Size(max=45, message="No se puede colocar un nombre tan largo.")
@@ -38,11 +38,11 @@ public class Pelicula implements Serializable {
 	@Column(name="clasificacion_id")
 	private int clasificacionId;
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

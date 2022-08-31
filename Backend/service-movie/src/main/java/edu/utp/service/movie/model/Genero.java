@@ -10,17 +10,17 @@ public class Genero implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 
 	@NotEmpty(message="Por favor agregue un nombre al genero")
 	@Size(max=45, message="No se puede colocar un nombre tan largo.")
 	private String nombre;
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

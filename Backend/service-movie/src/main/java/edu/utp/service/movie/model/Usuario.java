@@ -13,7 +13,7 @@ public class Usuario implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @NotEmpty(message="Por favor agregue un titulo")
     @Size(min=1, max=45, message="El nombre no es valido")
@@ -26,16 +26,17 @@ public class Usuario implements Serializable {
 
     @NotEmpty(message="Por favor agregue un titulo")
     @Size(min=1, max=45, message="El apellido no es valido")
+    @Column(name="primer_apellido")
     private String primerApellido;
 
     @Size(min=1, max=45, message="El segundo apellido no es valido")
-    @Column(name="segundo_nombre")
+    @Column(name="segundo_apellido")
     private String segundoApellido;
 
     @Column(name="fecha_nacimiento")
     private Date nacimiento;
 
-    private int edad;
+    private Integer edad;
 
     @NotEmpty(message="Por favor agregue un titulo")
     @Size(min=1, max=70, message="El segundo apellido no es valido")
@@ -49,11 +50,11 @@ public class Usuario implements Serializable {
     @Column(name="rol_id")
     private int rolId;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

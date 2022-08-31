@@ -9,7 +9,7 @@ import java.io.Serializable;
 public class Opinion implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @NotEmpty(message="Por favor agregue una opinion.")
     private String opinion;
@@ -20,11 +20,11 @@ public class Opinion implements Serializable {
     @Column(name="pelicula_id")
     private int peliculaId;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
