@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="icon" type="image/x-icon" href="ImagenesIS/Icono.jpg">
+    <link rel="stylesheet" href="./styleIS.css"/>
+    
+</head>
+<header>
+    <nav>
+        <ul class="main-nav">
+            <li class="main-nav__item"> <a href="https://www.google.com"  target="_blank">Página Principal</a>  </li>  
+            <li class="main-nav__item"> <a href="https://www.google.com"  target="_blank">Registrarse</a>  </li>
+            <li class="main-nav__item"> <a href="https://www.google.com"  target="_blank">Calificar Película</a> </li>
+        </ul>
+    </nav>
+</header>
 
+<body> 
+
+<main>
+    <div class="myDiv">
+        <h1>Iniciar Sesión</h1>
+        <h3>Inicia sesión para calificar todas las películas que quieras.</h3>
+    </div>     
+        
+    <div class="contenedor">
+        <form>
+            <label for="Nombre de Usuario">Nombre de Usuario:</label><br>
+            <input type="text" id="Nombre de Usuario" name="Nombre de Usuario" required/><br>
+            <label for="Contraseña">Contraseña:</label><br>
+            <input type="password" id="Contraseña" required><br>
+            <input type="submit" value="Iniciar Sesión"><br>
+        </form>
+    </div>   
+</main>
+</body>
+</html>
