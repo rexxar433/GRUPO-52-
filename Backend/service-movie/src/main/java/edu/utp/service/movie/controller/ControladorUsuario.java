@@ -1,6 +1,7 @@
 package edu.utp.service.movie.controller;
 
 import edu.utp.service.movie.repository.UsuarioRepository;
+import edu.utp.service.movie.service.UsuarioService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,18 +14,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class ControladorUsuario {
 
     @Autowired
-    private UsuarioRepository usuarioRepository;
+    private UsuarioService usuarioService;
 
     @GetMapping("/Login")
     public String login(Model model){
-        var usuarios= usuarioRepository.findAll();
+        var usuarios= usuarioService.listarUsuarios();
         model.addAttribute("usuarios",usuarios);
-        return "Login";
+        return "auth/login";
     }
     @GetMapping("/registrar")
     public String register(Model model){
 
-        return "CreateUser";
+        return "auth/createUser";
     }
 
 }
