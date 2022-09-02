@@ -1,30 +1,36 @@
 package edu.utp.service.movie.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="rol")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Rol implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name="role")
     private String role;
 
-    public Long getId() {
-        return id;
-    }
+    @OneToMany(mappedBy = "rol",cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
+    private List<Usuario> usuarios;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void agregarUsuarios(Usuario usuario){
+        if(usuario==null){
+            usuarios=new ArrayList<>();
+        }
+        usuarios.add(usuario);
 
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
+        usuario.setRol(this);
     }
 }

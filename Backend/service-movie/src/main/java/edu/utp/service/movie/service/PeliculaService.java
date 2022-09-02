@@ -12,4 +12,8 @@ public interface PeliculaService {
     public void eliminar(Pelicula pelicula);
 
     public Pelicula buscar(Long id);
+
+    public List<Pelicula> findByTitulo(String titulo);
+
+    public List<Pelicula> findByArgumento(String argumento);
 }

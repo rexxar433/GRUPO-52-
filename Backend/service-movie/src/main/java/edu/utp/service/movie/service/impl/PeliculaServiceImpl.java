@@ -37,4 +37,16 @@ public class PeliculaServiceImpl implements PeliculaService {
     public Pelicula buscar(Long id) {
         return peliculaRepository.findById(id).orElse(null);
     }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Pelicula> findByTitulo(String titulo) {
+        return (List<Pelicula>) peliculaRepository.findByTitulo(titulo);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Pelicula> findByArgumento(String argumento) {
+        return (List<Pelicula>) peliculaRepository.findByArgumento(argumento);
+    }
 }

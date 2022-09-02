@@ -16,9 +16,9 @@
     <title>PeliReview</title>
 </head>
 <body>
-<nav class="nav">
+<nav class="navbar navbar-dark bg-primary">
     <a class="nav-link active" href="/">Inicio</a>
-    <a class="nav-link" href="#">Categorias</a>
+    <a class="nav-link" href="/">Categorias</a>
 </nav>
 <div class="container">
     <!--justify-content-md-center-->
@@ -29,11 +29,20 @@
                 <h5 th:text="${pelicula.titulo}" class="card-title"></h5>
                 <p th:text="${pelicula.argumento}" class="card-text"></p>
                 Duracion(minutos): <p th:text="${pelicula.duracion}"></p>
+                <div th:each="opinion: ${pelicula.opiniones}">
+                    <p th:text="${opinion.opinion}"></p>
+                </div>
+                    <p th:text="${pelicula.clasificacion.nombre}"></p>
+                <!--<div th:each="genero: ${pelicula.generos}">
+                    <p th:text="${genero.nombre}"></p>
+                </div>-->
                 <a href="#" class="btn btn-primary">Ver sinopsis</a>
             </div>
         </div>
     </div>
 </div>
+
+
 
 
 </body>

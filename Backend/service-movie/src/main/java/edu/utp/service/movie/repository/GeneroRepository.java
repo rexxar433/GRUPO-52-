@@ -1,7 +1,7 @@
 package edu.utp.service.movie.repository;
 
 import edu.utp.service.movie.model.Genero;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface GeneroRepository extends CrudRepository<Genero,Long> {
+public interface GeneroRepository extends JpaRepository<Genero,Long> {
 }
