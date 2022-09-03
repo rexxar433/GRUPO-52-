@@ -1,5 +1,7 @@
 package edu.utp.service.movie.controller;
 
+import edu.utp.service.movie.model.Pelicula;
+import edu.utp.service.movie.model.Usuario;
 import edu.utp.service.movie.repository.UsuarioRepository;
 import edu.utp.service.movie.service.UsuarioService;
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +31,16 @@ public class ControladorUsuario {
     //@GetMapping("/registrar")
     public String register(Model model){
 
+        return "auth/createUser";
+    }
+
+    @PostMapping("/usuario/crear")
+    public String crearPelicula(Usuario usuario){
+        usuarioService.guardar(usuario);
+        return "redirect:/";
+    }
+    @GetMapping("/usuario/agregar")
+    public String agregar(Usuario usuario){
         return "auth/createUser";
     }
 

@@ -1,5 +1,6 @@
 package edu.utp.service.movie.controller;
 
+import edu.utp.service.movie.model.Pelicula;
 import edu.utp.service.movie.service.PeliculaService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,4 +40,15 @@ public class ControladorPelicula {
         }
         return "index";
     }
+    @PostMapping("/pelicula/crear")
+    public String crearPelicula(Pelicula pelicula){
+        peliculaService.guardar(pelicula);
+        return "redirect:/";
+    }
+    @GetMapping("/pelicula/agregar")
+    public String agregar(Pelicula pelicula){
+        return "createPelicula";
+    }
+
+
 }
