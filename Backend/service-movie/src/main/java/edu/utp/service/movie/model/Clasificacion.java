@@ -1,13 +1,22 @@
 package edu.utp.service.movie.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="clasificacion")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Clasificacion implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,27 +30,15 @@ public class Clasificacion implements Serializable {
     @Column(name="edad_minima")
     private String edadMinima;
 
-    public Long getId() {
-        return id;
-    }
+    @OneToMany(mappedBy = "clasificacion",cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
+    private List<Pelicula> peliculas;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void agregarPeliculas(Pelicula pelicula){
+        if(peliculas==null){
+            peliculas=new ArrayList<>();
+        }
+        peliculas.add(pelicula);
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getEdadMinima() {
-        return edadMinima;
-    }
-
-    public void setEdadMinima(String edadMinima) {
-        this.edadMinima = edadMinima;
+        pelicula.setClasificacion(this);
     }
 }
