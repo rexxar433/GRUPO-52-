@@ -38,7 +38,6 @@ public class Pelicula implements Serializable {
 	@Min(value=1, message="el año no tiene un valor permitido.")
 	private int ano;
 
-
 	private double puntuacion;
 
 	//private image imagen;
