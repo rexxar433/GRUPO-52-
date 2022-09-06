@@ -22,8 +22,8 @@ public class PeliculaServiceImpl implements PeliculaService {
 
     @Override
     @Transactional
-    public void guardar(Pelicula pelicula) {
-        peliculaRepository.save(pelicula);
+    public Pelicula guardar(Pelicula pelicula) {
+        return peliculaRepository.save(pelicula);
     }
 
     @Override

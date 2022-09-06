@@ -23,8 +23,8 @@ public class GeneroServiceImpl implements GeneroService {
 
     @Override
     @Transactional
-    public void guardar(Genero genero) {
-        generoRepository.save(genero);
+    public Genero guardar(Genero genero) {
+        return generoRepository.save(genero);
     }
 
     @Override

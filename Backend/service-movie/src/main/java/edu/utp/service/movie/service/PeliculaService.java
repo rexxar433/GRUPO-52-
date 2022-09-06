@@ -7,7 +7,7 @@ import java.util.List;
 public interface PeliculaService {
     public List<Pelicula> listarPeliculas();
 
-    public void guardar(Pelicula pelicula);
+    public Pelicula guardar(Pelicula pelicula);
 
     public void eliminar(Pelicula pelicula);
 

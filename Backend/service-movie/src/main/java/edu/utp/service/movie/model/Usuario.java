@@ -3,6 +3,7 @@ package edu.utp.service.movie.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -21,7 +22,7 @@ import java.util.List;
 public class Usuario implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotEmpty(message="Por favor agregue un titulo")
@@ -42,6 +43,7 @@ public class Usuario implements Serializable {
     @Column(name="segundo_apellido")
     private String segundoApellido;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(name="fecha_nacimiento")
     private Date nacimiento;
 

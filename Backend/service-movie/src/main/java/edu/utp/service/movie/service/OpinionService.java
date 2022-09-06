@@ -7,7 +7,7 @@ import java.util.List;
 public interface OpinionService {
     public List<Opinion> listarOpiniones();
 
-    public void guardar(Opinion opinion);
+    public Opinion guardar(Opinion opinion);
 
     public void eliminar(Opinion opinion);
 

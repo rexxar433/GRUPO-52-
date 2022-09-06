@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Slf4j
-//@CrossOrigin
-//@RequestMapping("/api/usuarios")
+@CrossOrigin
+@RequestMapping("/api/usuario")
 public class ControladorUsuario {
 
     @Autowired
@@ -28,18 +28,17 @@ public class ControladorUsuario {
         model.addAttribute("usuarios",usuarios);
         return "auth/login";
     }
-    //@GetMapping("/registrar")
+    @GetMapping("/registrar")
     public String register(Model model){
-
         return "auth/createUser";
     }
 
-    @PostMapping("/usuario/crear")
+    @PostMapping("/crear")
     public String crearPelicula(Usuario usuario){
         usuarioService.guardar(usuario);
         return "redirect:/";
     }
-    @GetMapping("/usuario/agregar")
+    @GetMapping("/agregar")
     public String agregar(Usuario usuario){
         return "auth/createUser";
     }

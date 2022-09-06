@@ -4,18 +4,33 @@ import edu.utp.service.movie.model.Pelicula;
 import edu.utp.service.movie.service.PeliculaService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @Slf4j
-//@CrossOrigin
-//@RequestMapping("/api/peliculas")
+@CrossOrigin
+@RequestMapping("/api/pelicula")
 public class ControladorPelicula {
 
     @Autowired
     private PeliculaService peliculaService;
+
+
+    /*@GetMapping("/")
+    public List<Pelicula> listarPeliculas(){
+        return peliculaService.listarPeliculas();
+    }
+
+    @PostMapping("/")
+    public Pelicula crearPelicula(@RequestBody Pelicula pelicula){
+        return peliculaService.guardar(pelicula);
+    }*/
 
     @GetMapping("/{id}")
     public String buscarPelicula(Model model,@PathVariable Long id){
@@ -31,23 +46,23 @@ public class ControladorPelicula {
     }
 
     @GetMapping("/titulo/{titulo}")
-    public String buscarPeliculaTitulo(Model model,@PathVariable String titulo){
+    public ResponseEntity<List> buscarPeliculaTitulo(@PathVariable String titulo){
         var peliculas=peliculaService.findByTitulo(titulo);
         if(peliculas.isEmpty()){
             log.info(peliculas.toString());
         }else {
-            model.addAttribute("peliculas", peliculas);
+          // model.addAttribute("peliculas", peliculas);
         }
-        return "index";
+        return ResponseEntity.badRequest().body(peliculas);
     }
-    @PostMapping("/pelicula/crear")
-    public String crearPelicula(Pelicula pelicula){
+    @PostMapping("/crear")
+    public String crearPelicula(@RequestBody Pelicula pelicula){
         peliculaService.guardar(pelicula);
         return "redirect:/";
     }
-    @GetMapping("/pelicula/agregar")
+    @GetMapping("/agregar")
     public String agregar(Pelicula pelicula){
-        return "createPelicula";
+        return "movie/createPelicula";
     }
 
 

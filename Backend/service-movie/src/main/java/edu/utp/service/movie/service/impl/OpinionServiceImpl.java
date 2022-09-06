@@ -23,8 +23,8 @@ public class OpinionServiceImpl implements OpinionService {
 
     @Override
     @Transactional
-    public void guardar(Opinion opinion) {
-        opinionRepository.save(opinion);
+    public Opinion guardar(Opinion opinion) {
+        return opinionRepository.save(opinion);
     }
 
     @Override

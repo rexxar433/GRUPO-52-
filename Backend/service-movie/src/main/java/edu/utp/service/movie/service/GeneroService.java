@@ -8,7 +8,7 @@ import java.util.List;
 public interface GeneroService {
     public List<Genero> listarGeneros();
 
-    public void guardar(Genero genero);
+    public Genero guardar(Genero genero);
 
     public void eliminar(Genero genero);
 
