@@ -25,8 +25,8 @@ public class Usuario implements Serializable {
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotEmpty(message="Por favor agregue un titulo")
-    @Size(min=1, max=45, message="El nombre no es valido")
+    @NotEmpty(message="Por favor agregue un nombre")
+    @Size(min=4, max=45, message="El nombre no es valido")
     @Column(name="primer_nombre")
     private String primerNombre;
 
@@ -34,7 +34,7 @@ public class Usuario implements Serializable {
     @Column(name="segundo_nombre")
     private String segundoNombre;
 
-    @NotEmpty(message="Por favor agregue un titulo")
+    @NotEmpty(message="Por favor agregue un apellido")
     @Size(min=1, max=45, message="El apellido no es valido")
     @Column(name="primer_apellido")
     private String primerApellido;
@@ -49,12 +49,12 @@ public class Usuario implements Serializable {
 
     private Integer edad;
 
-    @NotEmpty(message="Por favor agregue un titulo")
-    @Size(min=1, max=70, message="El segundo apellido no es valido")
+    @NotEmpty(message="Por favor agregue un email")
+    @Size(min=1, max=70, message="El email es invalido")
     @Email(message="No es un correo valido. ")
     private String email;
 
-    @NotEmpty(message="Por favor agregue un titulo")
+    @NotEmpty(message="Por favor agregue una contrasena")
     @Size(min=1, max=45, message="La contraseña no es valida")
     private String contrasena;
 

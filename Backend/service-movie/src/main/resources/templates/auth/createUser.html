@@ -13,161 +13,106 @@
     <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
     <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-    <title>Crea tu cuenta</title>
+    <link rel="stylesheet" th:href="@{/css/styleR.css}" />
+    <title>Registrate</title>
 </head>
-<body>
-    <ul class="nav justify-content-center navbar-dark bg-dark">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pelicula</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-    </ul>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline">Menu</span>
-                    </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
-                        </li>
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                            <span class="d-none d-sm-inline mx-1">loser</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
+<body class="bg-dark">
+<header>
+    <nav id="header" class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-Intro" href="#">
+                PeliReview
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-Pag" aria-current="page" href="https://www.google.com/" target="_blank">Página
+                            Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-Inicio" href="https://www.google.com/" target="_blank">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col text-center">
+                <h1> Registrate a PeliReview</h1>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col text-center text-white">
+                <small> Únete a la comunidad más crítica y apasionada del cine.</small>
+            </div>
+        </div>
+        <div class="row mb-3">
+
+            <!--Formulario-->
+            <form class="bg-info p-3 rounded-2" th:action="@{/api/usuario/crear}" method="POST" th:object="${usuario}" >
+                <input type="hidden" name="id" th:field="*{id}" value="6">
+                <div class="text-center">
+                    <div class="row align-items-start">
+                        <div class="col mb-3">
+                            <input type="text" placeholder="Primer Nombre" th:field="*{primerNombre}" name="nombre1" class="form-control" autocomplete="none"
+                                   required />
+                            <span th:if="${#fields.hasErrors('primerNombre')}" th:errors="*{primerNombre}"></span>
+                        </div>
+                        <div class="col mb-3">
+                            <input type="text" placeholder="Primer Apellido" th:field="*{primerApellido}" name="apellido1" class="form-control" autocomplete=none
+                                   required />
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col mb-3">
+                            <input type="text" placeholder="Segundo Nombre" th:field="*{segundoNombre}" name="nombre2" class="form-control">
+                        </div>
+                        <div class="col mb-3">
+                            <input type="text" placeholder="Segundo Apellido" th:field="*{segundoApellido}" name="apellido2" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row align-items-end">
+                        <div class="col mb-3">
+                            <input type="date" placeholder="Fecha de Nacimiento" th:field="*{nacimiento}" name="nacimiento" class="form-control"
+                                   autocomplete=none required />
+                        </div>
+                        <div class="col mb-3"><!--Disable-->
+                            <input type="number" placeholder="Edad" name="edad" th:field="*{edad}" class="form-control" autocomplete=none required  />
+                        </div>
+                        <div class="col mb-3">
+                            <input type="text" placeholder="Correo Electrònico"  th:field="*{email}" name="correo" class="form-control" autocomplete=none
+                                   required />
+                            <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+                        </div>
+                    </div>
+                    <div class="row align-items-end">
+                        <div class="col mb-3">
+                            <input type="password" placeholder="Contraseña" th:field="*{contrasena}" name="pass" class="form-control" autocomplete=none
+                                   required />
+                        </div>
+                        <div class="col mb-3">
+                            <input type="password" placeholder="Confirma contraseña"  name="repass" class="form-control"
+                                   autocomplete=none required />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col py-3">
-                <form class="form" th:action="@{/api/usuario/crear}" method="post" th:object="${usuario}">
-                    <!-- 2 column grid layout with text inputs for the first and last names -->
-                    <div class="row mb-1">
-                        <div class="col">
-                            <div class="form-outline">
-                                <input type="text" id="primerNombre" name="primerNombre" class="form-control" />
-                                <label class="form-label" for="primerNombre">Primer nombre</label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-outline">
-                                <input type="text" id="primerApellido" name="primerApellido" class="form-control" />
-                                <label class="form-label" for="primerApellido">Apellido</label>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!-- Text input -->
-                    <div class="form-outline mb-1">
-                        <input type="date" id="nacimiento" name="nacimiento" class="form-control" />
-                        <label class="form-label" for="nacimiento">Nacimiento</label>
-                    </div>
-            
-                    <!-- Text input -->
-                    <div class="form-outline mb-1">
-                        <input type="number" id="edad" name="edad" class="form-control" />
-                        <label class="form-label" for="edad">Edad</label>
-                    </div>
-            
-                    <!-- Email input -->
-                    <div class="form-outline mb-1">
-                        <input type="email" id="email" name="email" class="form-control" />
-                        <label class="form-label" for="email">Email</label>
-                    </div>
-            
-                    <!-- Number input -->
-                    <div class="form-outline mb-1">
-                        <input type="password" id="contrasena" name="contrasena" class="form-control" />
-                        <label class="form-label" for="contrasena">Contraseña</label>
-                    </div>
-
-                    <div class="form-outline mb-1">
-                        <input type="number" id="id" name="id" class="form-control" />
-                        <label class="form-label" for="id">id</label>
-                    </div>
-            
-                    <!-- Submit button -->
-                    <div class="text-center row container">
-                        <button type="submit" name="crear" class="btn btn-primary">Crear Cuenta</button>
-                    </div>
-
-                    
-                </form>
+                <!--Button-->
+                <div class="text-center">
+                    <input type="submit" class="btn btn-danger btn-lg" name="registrarme" value="Registrarme">
+                </div>
+            </form>
+            <div class="row">
+                <img th:src="@{/img/Cinta2.png}" width="100%">
             </div>
         </div>
     </div>
+</main>
 </body>
 </html>
