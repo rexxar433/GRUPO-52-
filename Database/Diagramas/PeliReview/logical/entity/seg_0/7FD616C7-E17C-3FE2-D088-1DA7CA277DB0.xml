@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FD616C7-E17C-3FE2-D088-1DA7CA277DB0" name="Pelicula">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:43:54 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="47CF09B2-3802-28E8-3416-2E560BF14E1B">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:43:59 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titulo" id="DE821E90-315F-3EAE-0165-E095DF6C2D92">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:44:09 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 CHAR</dataTypeSize>
+<ownDataTypeParameters>45 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="argumento" id="8A3EF114-3EA1-1D90-0568-86BCA181E96D">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:44:39 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Duracion" id="56531AFA-7FF0-75BF-7F3E-DC96223D18D7">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:44:55 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ano" id="5B388545-2145-9DE6-8B54-19C8054E9E72">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:45:11 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="puntuacion" id="A86900DB-3C64-C3B1-989F-839B1AA1D0E4">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:45:37 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="imagen" id="2EB7664B-0ADB-EB8C-F1EB-7746B25103F1">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:57:24 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="22A126EA-1EE3-7440-72D5-10E6F9F9171F" name="Pelicula PK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:44:28 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>47CF09B2-3802-28E8-3416-2E560BF14E1B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

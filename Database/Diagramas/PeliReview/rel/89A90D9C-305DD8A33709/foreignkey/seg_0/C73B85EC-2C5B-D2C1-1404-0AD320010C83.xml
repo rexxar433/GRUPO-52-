@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C73B85EC-2C5B-D2C1-1404-0AD320010C83" containerWithKeyObject="68C82EB4-FAC2-C775-C363-8E177C1E7199" localFKIndex="394BB3E0-54F4-7CC4-A09A-D5E380231058" name="Pelicula_Clasificacion_FK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>71760EFA-403A-C60F-6758-A6BE728B9010</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<referredTableLongName>Clasificacion</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A8FA11C6-A677-79CA-5A21-73622F06D41A</referredTableID>
+<keyObject>D2F2128A-14AE-E6AC-778C-0483564015A4</keyObject>
+<referredKeyID>D2F2128A-14AE-E6AC-778C-0483564015A4</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B5EE60C-D6FC-6CF7-36B9-C1D0FA6D988E" name="Usuario">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>682D75BE-2421-CF93-32BF-13B4FDAB96CD</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2E820A1E-DF0D-23EC-823C-1ECC6FFD9304">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>A1283821-E02E-12A2-5E69-41F00B494C7E</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="primer_nombre" id="65888BC7-BF41-6DE8-0701-2C431E02A279">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>F9DA158B-8FD6-50FA-1213-79567D9D68CD</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 CHAR</dataTypeSize>
+<ownDataTypeParameters>45 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="segundo_nombre" id="BD6413A5-DBDA-7DBE-8362-6B7A7D9D8C0A">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>FBD843C4-9D60-B5A5-F9CF-C07EFA7BF527</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 CHAR</dataTypeSize>
+<ownDataTypeParameters>45 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="primer_apellido" id="1814B302-DD5C-4F87-733C-648E880BE9B9">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>298D4815-9B43-A4DB-7C1B-487258A801B0</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 CHAR</dataTypeSize>
+<ownDataTypeParameters>45 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="segundo_apellido" id="E7C0B668-2213-9F50-B1CA-EE408CF1716D">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>BFD69079-843E-EB67-E818-C1CD8BBC9BAA</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 CHAR</dataTypeSize>
+<ownDataTypeParameters>45 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="2BF2EE50-5077-1B33-AD87-A040E7F4E271">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>E12A4B0B-BFEC-3494-C730-02A07EAD949F</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="edad" id="B6817208-101A-BBE7-EE25-425019CC366F">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>E122CCA0-75D2-F0A1-E40B-1C6697A27554</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="B71BB8C0-56DB-A746-372E-40646C5EF6B9">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>ED350C5C-7088-8972-DE39-F232302CB252</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contrasena" id="E61CE6AB-182C-384C-EF18-ED8874AD33EE">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>A7D220E3-9515-8716-F445-D5865B3A85CD</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 CHAR</dataTypeSize>
+<ownDataTypeParameters>45 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rol_id" id="5D35C0C4-AF0D-5C49-A475-5EC5D41D603C">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 02:28:37 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AEBE2D37-7007-7207-9F9E-C01DB697FEC8" referredColumn="4CD9DE86-8744-96B2-8F94-C2A63C7A5F7D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9BE891D-DDF7-FA10-118E-BA71B3817F42" name="Usuario_PK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>A7E83CFA-EEED-25D0-8B76-626077B7858E</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E820A1E-DF0D-23EC-823C-1ECC6FFD9304"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="450A36AD-6C55-8FC8-415B-7916462687D4" name="Usuario_Rol_FK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>E8560ABD-DE13-2D8F-0B84-3BD57251801E</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D35C0C4-AF0D-5C49-A475-5EC5D41D603C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

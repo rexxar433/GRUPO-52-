@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8FA11C6-A677-79CA-5A21-73622F06D41A" name="Clasificacion">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:24 UTC</createdTime>
+<generatorID>8458DB6A-3358-7176-2C3E-CCAB93967585</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6A4CC2CD-8899-2B5A-27C0-F6C8EF144CE3">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>6ABEEC74-53A1-2C35-C11B-A0D2B43B69D5</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="2A40404D-667A-4FEA-446B-770D11C631BC">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>8DA4BBCC-5844-9A63-D61A-3B5126402C42</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="edad_minima" id="78CE175B-AB0F-11CC-8EE9-65F8F37F348C">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>FCAF6E34-4CD9-1404-5FF1-6AD63FC092F1</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2F2128A-14AE-E6AC-778C-0483564015A4" name="Clasificacion_PK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>256BFBD1-CD17-1802-48EA-CE6DBF8E6638</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A4CC2CD-8899-2B5A-27C0-F6C8EF144CE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

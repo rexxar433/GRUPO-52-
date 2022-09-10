@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA7985EC-D04D-391E-78BA-B8EFAA0B377B" name="Genero">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:51:21 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="D957BDCF-7003-C2BC-92FB-CCA39E2E35D9">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:51:27 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="D10B0893-250A-90D3-A6D5-A621344E79D9">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:51:37 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8D05FB12-9FDB-3F12-6DC1-C6372495ADD7" name="Genero PK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:51:35 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="89A90D9C-5AAE-41A4-5444-305DD8A33709" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D957BDCF-7003-C2BC-92FB-CCA39E2E35D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

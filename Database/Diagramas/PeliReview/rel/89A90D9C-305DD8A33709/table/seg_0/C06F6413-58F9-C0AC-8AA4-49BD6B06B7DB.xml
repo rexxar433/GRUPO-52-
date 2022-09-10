@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C06F6413-58F9-C0AC-8AA4-49BD6B06B7DB" name="Opinion">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>4A9EF28D-B7F2-4AB1-86CA-4541373775ED</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7A66F173-17D9-FE13-C0A5-FC22B47315A4">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>2EE4E3D1-E93C-EA36-B796-944110110CED</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opinion" id="E6396DFD-F260-BA7A-02EB-1D4671740FEF">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>D937B93F-27E3-18A6-BDA1-B18137787217</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_id" id="690579E3-0575-BFA3-F893-64DD284C43A9">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>2D05A045-BC15-7884-79FA-44F4745A201B</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BCCB668-4322-BA79-93BC-A9BAE8B74864" referredColumn="2E820A1E-DF0D-23EC-823C-1ECC6FFD9304"/>
+</associations>
+</Column>
+<Column name="Pelicula_id" id="C7D108C9-6D40-55A6-6709-D4BF3F951205">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>628EC93A-9653-56C2-B244-03ACDB93AB79</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C53CBE2-ECF7-A6B9-526D-CB6877EA10FE" referredColumn="8FA53D7F-525B-F4B7-1374-DD508A41AF44"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3310E957-CFAC-2486-98D4-A5E70D291E08" name="Opinion_PK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>D741B7CA-B0E1-6C74-C0DA-DD1BD2DE9AB6</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A66F173-17D9-FE13-C0A5-FC22B47315A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71DFE45F-A753-3781-C693-3FF841069033" name="Opinion_Usuario_FK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>8D03DD88-55F3-6FFC-F423-7DE68F910A54</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="690579E3-0575-BFA3-F893-64DD284C43A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75BF9C71-D70D-B7B7-C5DF-83F5F607507F" name="Opinion_Pelicula_FK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>C82689B3-477F-4D2E-1C93-56F15BB28D81</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7D108C9-6D40-55A6-6709-D4BF3F951205"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

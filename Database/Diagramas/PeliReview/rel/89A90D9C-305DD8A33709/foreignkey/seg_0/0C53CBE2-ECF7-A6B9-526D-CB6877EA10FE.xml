@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0C53CBE2-ECF7-A6B9-526D-CB6877EA10FE" containerWithKeyObject="C06F6413-58F9-C0AC-8AA4-49BD6B06B7DB" localFKIndex="75BF9C71-D70D-B7B7-C5DF-83F5F607507F" name="Opinion_Pelicula_FK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:58:25 UTC</createdTime>
+<generatorID>C82689B3-477F-4D2E-1C93-56F15BB28D81</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<referredTableLongName>Pelicula</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>68C82EB4-FAC2-C775-C363-8E177C1E7199</referredTableID>
+<keyObject>AC865FE0-E373-54FA-81B3-3D3AA1575779</keyObject>
+<referredKeyID>AC865FE0-E373-54FA-81B3-3D3AA1575779</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

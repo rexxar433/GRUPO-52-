@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E6FA854-7AEA-C9AB-E4F9-ECD01DE98B46" name="PeliculaGenero">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:59:38 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<ordsAlias>relation_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pelicula_id" id="FF4E3BA5-5B9C-201E-4233-3340EF834489">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:59:38 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF9E964A-B31E-4947-CD91-B3AD06541C51" referredColumn="8FA53D7F-525B-F4B7-1374-DD508A41AF44"/>
+</associations>
+</Column>
+<Column name="Genero_id" id="C7094631-0FFD-8E53-E87C-73214DCF66A2">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:59:38 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD8808DA-F8D7-468B-5087-F2F0D99F20E2" referredColumn="D6D0790A-A61E-B088-47F3-F4C8A9D6C7B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="346098D5-344C-E6AA-16AE-F47A764FED40" name="Relation_5_PK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:59:38 UTC</createdTime>
+<ownerDesignName>PeliReview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF4E3BA5-5B9C-201E-4233-3340EF834489"/>
+<colUsage columnID="C7094631-0FFD-8E53-E87C-73214DCF66A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8BC045F-28C5-3AE9-8859-0069C965CE54" name="Relation_5_Pelicula_FK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:59:38 UTC</createdTime>
+<generatorID>4512ABF0-E3B2-978E-0F02-6453A28F1378</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF4E3BA5-5B9C-201E-4233-3340EF834489"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8D8F0E7-A9AA-4B8F-49FC-16D76E3860FB" name="Relation_5_Genero_FK">
+<createdBy>danie</createdBy>
+<createdTime>2022-08-28 01:59:38 UTC</createdTime>
+<generatorID>4512ABF0-E3B2-978E-0F02-6453A28F1378</generatorID>
+<ownerDesignName>PeliReview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7094631-0FFD-8E53-E87C-73214DCF66A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

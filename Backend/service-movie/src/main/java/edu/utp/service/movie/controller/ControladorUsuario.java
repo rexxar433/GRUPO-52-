@@ -1,6 +1,7 @@
 package edu.utp.service.movie.controller;
 
 import edu.utp.service.movie.model.Pelicula;
+import edu.utp.service.movie.model.Rol;
 import edu.utp.service.movie.model.Usuario;
 import edu.utp.service.movie.repository.UsuarioRepository;
 import edu.utp.service.movie.service.RolService;
@@ -43,12 +44,25 @@ public class ControladorUsuario {
 
     @PostMapping("/crear")
     public String crearPelicula(@Valid Usuario usuario, Errors errores){
-        if(errores.hasErrors()){
+        /*if(errores.hasErrors()){
             return "auth/createUser";
-        }else{
+        }else{*/
             usuarioService.guardar(usuario);
+            Rol rol=rolService.buscar(2);
+            log.info("Informacion del usuario");
+            usuario.setId((long)6);
+            usuario.setRol(rol);
+
+            log.info(String.valueOf(usuario.getId()));
+            log.info(usuario.getPrimerNombre());
+            log.info(usuario.getPrimerApellido());
+            log.info(usuario.getEmail());
+            log.info(usuario.getContrasena());
+            log.info(String.valueOf(usuario.getRol().getId()));
+            log.info(String.valueOf(usuario.getRol().getRole()));
+
             return "redirect:/";
-        }
+        //}
     }
     @GetMapping("/agregar")
     public String agregar(Usuario usuario){

@@ -22,7 +22,7 @@ import java.util.List;
 public class Usuario implements Serializable {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotEmpty(message="Por favor agregue un nombre")
@@ -30,7 +30,6 @@ public class Usuario implements Serializable {
     @Column(name="primer_nombre")
     private String primerNombre;
 
-    @Size(min=1, max=45, message="El segundo nombre no es valido")
     @Column(name="segundo_nombre")
     private String segundoNombre;
 
@@ -39,7 +38,6 @@ public class Usuario implements Serializable {
     @Column(name="primer_apellido")
     private String primerApellido;
 
-    @Size(min=1, max=45, message="El segundo apellido no es valido")
     @Column(name="segundo_apellido")
     private String segundoApellido;
 
