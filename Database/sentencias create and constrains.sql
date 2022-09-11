@@ -74,20 +74,8 @@ CREATE TABLE usuario (
     primary key(id)
 );
 
-ALTER TABLE clasificacion ADD CONSTRAINT clasificacion_pk PRIMARY KEY ( id );
-
-ALTER TABLE genero ADD CONSTRAINT genero_pk PRIMARY KEY ( id );
-
-ALTER TABLE opinion ADD CONSTRAINT opinion_pk PRIMARY KEY ( id );
-
-ALTER TABLE pelicula ADD CONSTRAINT pelicula_pk PRIMARY KEY ( id );
-
 ALTER TABLE pelicula_genero ADD CONSTRAINT pelicula_genero_pk PRIMARY KEY ( pelicula_id,
                                                                   genero_id );
-ALTER TABLE rol ADD CONSTRAINT rol_pk PRIMARY KEY ( id );
-
-ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( id );
-
 ALTER TABLE opinion
     ADD CONSTRAINT opinion_pelicula_fk FOREIGN KEY ( pelicula_id )
         REFERENCES pelicula ( id );
