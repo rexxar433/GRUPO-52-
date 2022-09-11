@@ -16,4 +16,8 @@ public interface PeliculaService {
     public List<Pelicula> findByTitulo(String titulo);
 
     public List<Pelicula> findByArgumento(String argumento);
+
+    public List<Pelicula> findByClasificacion(String clasificacion);
+
+    public List<Pelicula> findByGenero(String genero);
 }

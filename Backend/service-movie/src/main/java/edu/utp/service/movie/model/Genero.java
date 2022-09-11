@@ -24,10 +24,6 @@ public class Genero implements Serializable {
 	@Size(max=45, message="No se puede colocar un nombre tan largo.")
 	private String nombre;
 
-	@ManyToMany
-	@JoinTable(name = "pelicula_genero",
-			joinColumns = @JoinColumn(name = "genero_id"),
-			inverseJoinColumns = @JoinColumn(name = "pelicula_id"))
-	private List<Pelicula> peliculas;
+
 
 }

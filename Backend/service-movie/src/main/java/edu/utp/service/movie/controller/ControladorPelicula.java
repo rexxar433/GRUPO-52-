@@ -1,6 +1,11 @@
 package edu.utp.service.movie.controller;
 
+import edu.utp.service.movie.model.Genero;
 import edu.utp.service.movie.model.Pelicula;
+import edu.utp.service.movie.model.Rol;
+import edu.utp.service.movie.model.Usuario;
+import edu.utp.service.movie.service.ClasificacionService;
+import edu.utp.service.movie.service.GeneroService;
 import edu.utp.service.movie.service.PeliculaService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +13,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -21,16 +28,11 @@ public class ControladorPelicula {
     @Autowired
     private PeliculaService peliculaService;
 
+    @Autowired
+    private ClasificacionService clasificacionService;
 
-    /*@GetMapping("/")
-    public List<Pelicula> listarPeliculas(){
-        return peliculaService.listarPeliculas();
-    }
-
-    @PostMapping("/")
-    public Pelicula crearPelicula(@RequestBody Pelicula pelicula){
-        return peliculaService.guardar(pelicula);
-    }*/
+    @Autowired
+    private GeneroService generoService;
 
     @GetMapping("/{id}")
     public String buscarPelicula(Model model,@PathVariable Long id){
@@ -46,23 +48,69 @@ public class ControladorPelicula {
     }
 
     @GetMapping("/titulo/{titulo}")
-    public ResponseEntity<List> buscarPeliculaTitulo(@PathVariable String titulo){
+    public String buscarPeliculaTitulo(@PathVariable String titulo,Model model){
         var peliculas=peliculaService.findByTitulo(titulo);
         if(peliculas.isEmpty()){
-            log.info(peliculas.toString());
+            // Colocar error
         }else {
-          // model.addAttribute("peliculas", peliculas);
+          model.addAttribute("peliculas", peliculas);
         }
-        return ResponseEntity.badRequest().body(peliculas);
+        return "movie/index";
     }
+
+    @GetMapping("/clasificacion/{clasificacion}")
+    public String buscarPeliculaClasificacion(@PathVariable String clasificacion,Model model){
+        var peliculas=peliculaService.findByClasificacion(clasificacion);
+        if(peliculas.isEmpty()){
+            // Colocar error
+        }else {
+            model.addAttribute("peliculas", peliculas);
+        }
+        return "movie/index";
+    }
+
+    @GetMapping("/genero/{genero}")
+    public String buscarPeliculaGenero(@PathVariable String genero,Model model){
+        var peliculas=peliculaService.findByGenero(genero);
+        if(peliculas.isEmpty()){
+            // Colocar error
+        }else {
+            model.addAttribute("peliculas", peliculas);
+        }
+        return "movie/index";
+    }
+
+    @GetMapping("/argumento/{argumento}")
+    public String argumento(@PathVariable String argumento,Model model){
+        var peliculas=peliculaService.findByArgumento(argumento);
+        if(peliculas.isEmpty()){
+            // Colocar error
+        }else {
+            model.addAttribute("peliculas", peliculas);
+        }
+        return "movie/index";
+
+    }
+
     @PostMapping("/crear")
-    public String crearPelicula(@RequestBody Pelicula pelicula){
-        peliculaService.guardar(pelicula);
-        return "redirect:/";
+    public String crearPelicula(@Valid Pelicula pelicula, Errors errores){
+        if(errores.hasErrors()){
+            return "auth/createUser";
+        }else{
+            agregarGeneros(pelicula.getId(),(long)2);
+            peliculaService.guardar(pelicula);
+            return "redirect:/";
+        }
     }
+
     @GetMapping("/agregar")
     public String agregar(Pelicula pelicula){
         return "movie/createPelicula";
+    }
+
+
+    public void agregarGeneros(Long pelicula_id,Long genero_id){
+        //peliculaService.agregarGeneros(pelicula_id,genero_id);
     }
 
 

@@ -49,4 +49,16 @@ public class PeliculaServiceImpl implements PeliculaService {
     public List<Pelicula> findByArgumento(String argumento) {
         return (List<Pelicula>) peliculaRepository.findByArgumento(argumento);
     }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Pelicula> findByClasificacion(String clasficacion) {
+        return (List<Pelicula>) peliculaRepository.findByClasificacion(clasficacion);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Pelicula> findByGenero(String genero) {
+        return (List<Pelicula>) peliculaRepository.findByGenero(genero);
+    }
 }

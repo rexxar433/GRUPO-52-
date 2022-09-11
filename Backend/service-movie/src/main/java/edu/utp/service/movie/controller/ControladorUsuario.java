@@ -36,6 +36,7 @@ public class ControladorUsuario {
         model.addAttribute("usuarios",usuarios);
         return "auth/login";
     }
+
     @GetMapping("/registrar")
     public String register(Usuario usuario){
 
@@ -44,29 +45,20 @@ public class ControladorUsuario {
 
     @PostMapping("/crear")
     public String crearPelicula(@Valid Usuario usuario, Errors errores){
-        /*if(errores.hasErrors()){
+        if(errores.hasErrors()){
             return "auth/createUser";
-        }else{*/
-            usuarioService.guardar(usuario);
+        }else{
             Rol rol=rolService.buscar(2);
-            log.info("Informacion del usuario");
-            usuario.setId((long)6);
             usuario.setRol(rol);
-
-            log.info(String.valueOf(usuario.getId()));
-            log.info(usuario.getPrimerNombre());
-            log.info(usuario.getPrimerApellido());
-            log.info(usuario.getEmail());
-            log.info(usuario.getContrasena());
-            log.info(String.valueOf(usuario.getRol().getId()));
-            log.info(String.valueOf(usuario.getRol().getRole()));
-
+            usuarioService.guardar(usuario);
             return "redirect:/";
-        //}
+        }
     }
     @GetMapping("/agregar")
     public String agregar(Usuario usuario){
         return "auth/createUser";
     }
+
+
 
 }

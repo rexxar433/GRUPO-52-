@@ -46,6 +46,12 @@ public class Pelicula implements Serializable {
 	@JoinColumn(name="clasificacion_id")
 	private Clasificacion clasificacion;
 
+	@ManyToMany
+	@JoinTable(name = "pelicula_genero",
+			joinColumns = @JoinColumn(name = "pelicula_id"),
+			inverseJoinColumns = @JoinColumn(name = "genero_id"))
+	private List<Genero> generos;
+
 	@OneToMany(mappedBy = "pelicula",cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
 	private List<Opinion> opiniones;
 
@@ -58,6 +64,5 @@ public class Pelicula implements Serializable {
 
 		opinion.setPelicula(this);
 	}
-
 
 }
