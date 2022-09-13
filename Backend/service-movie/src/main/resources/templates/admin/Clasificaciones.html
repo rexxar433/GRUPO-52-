@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+            rel="stylesheet"
+            th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+    />
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <title>Clasificaciones</title>
+</head>
+<body>
+<div class="container text-center">
+    <div class="col" th:if="${clasificaciones != null and !clasificaciones.empty}">
+        <table class="table table-dark table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad minima</th>
+                <th scope="col">Editar</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="clasificacion,i : ${clasificaciones}">
+                <th scope="row" th:text="${clasificacion.id}"></th>
+                <td th:text="${clasificacion.nombre}"></td>
+                <td th:text="${clasificacion.edadMinima}"></td>
+                <td><a th:href="@{/api/clasificacion/editar/} +${clasificacion.id}">
+                    <button class="btn btn-primary">Editar</button>
+                </a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col" th:if="${clasificaciones == null or clasificaciones.empty}">
+        <span>No Hay clasificaciones</span>
+    </div>
+</div>
+</body>
+</html>

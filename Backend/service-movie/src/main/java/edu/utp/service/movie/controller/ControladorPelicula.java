@@ -34,6 +34,13 @@ public class ControladorPelicula {
     @Autowired
     private GeneroService generoService;
 
+    @GetMapping("/")
+    public String listarPeliculas(Model model){
+        var peliculas=peliculaService.listarPeliculas();
+        model.addAttribute("peliculas",peliculas);
+        return "admin/Peliculas";
+    }
+
     @GetMapping("/{id}")
     public String buscarPelicula(Model model,@PathVariable Long id){
         var pelicula=peliculaService.buscar(id);
@@ -112,6 +119,8 @@ public class ControladorPelicula {
     public void agregarGeneros(Long pelicula_id,Long genero_id){
         //peliculaService.agregarGeneros(pelicula_id,genero_id);
     }
+
+
 
 
 }

@@ -30,10 +30,16 @@ public class ControladorUsuario {
     @Autowired
     private RolService rolService;
 
-    //@GetMapping("/Login")
-    public String login(Model model){
+    @GetMapping("/")
+    public String listarUsuarios(Model model){
         var usuarios= usuarioService.listarUsuarios();
         model.addAttribute("usuarios",usuarios);
+        return "admin/Usuarios";
+    }
+
+    //@GetMapping("/Login")
+    public String login(Model model){
+        
         return "auth/login";
     }
 
@@ -44,7 +50,7 @@ public class ControladorUsuario {
     }
 
     @PostMapping("/crear")
-    public String crearPelicula(@Valid Usuario usuario, Errors errores){
+    public String crearUsuario(@Valid Usuario usuario, Errors errores){
         if(errores.hasErrors()){
             return "auth/createUser";
         }else{
@@ -59,6 +65,9 @@ public class ControladorUsuario {
         return "auth/createUser";
     }
 
-
-
+    @GetMapping("/eliminar")
+    public String eliminar(Usuario usuario){
+        usuarioService.eliminar(usuario);
+        return "redirect:/api/usuario/";
+    }
 }

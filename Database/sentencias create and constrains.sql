@@ -69,7 +69,7 @@ CREATE TABLE usuario (
     fecha_nacimiento DATE,
     edad             INTEGER,
     email            VARCHAR(70) NOT NULL,
-    contrasena       VARCHAR(45) NOT NULL,
+    contrasena       VARCHAR(55) NOT NULL,
     rol_id           INTEGER,
     primary key(id)
 );

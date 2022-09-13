@@ -1,6 +1,5 @@
 package edu.utp.service.movie.controller;
 
-import edu.utp.service.movie.model.Genero;
 import edu.utp.service.movie.model.Opinion;
 import edu.utp.service.movie.service.OpinionService;
 import edu.utp.service.movie.service.PeliculaService;
