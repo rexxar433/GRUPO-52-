@@ -13,6 +13,12 @@ header img{
    .btn-busqueda:hover{   
        color: rgb(56, 129, 129);
    }
+   .navbar .nav-item:active .nav-link{   
+    color: rgb(56, 129, 129);
+}
+.navbar .text-Intro:hover{
+    color: rgb(56, 129, 129);
+}
    
    
    .btn-PeliReview{
