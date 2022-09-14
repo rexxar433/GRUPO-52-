@@ -1,52 +1,16 @@
-body{
-    background-image: url("ImagenesIS/FondoIS.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
+header img{
+    width: 50px;
+    height: 50px;
+   }
+.navbar .nav-item .nav-link{
+    color: white;
 }
-
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-    
+.navbar .text-Intro{
+    color: white;
 }
-
-.myDiv { 
-
-    text-align: center;
-    font-family: "Helvetica Neue";
-    font-size: 20px;
-    
+.navbar .nav-item:hover .nav-link{   
+    color: rgb(56, 129, 129);
 }
-
-.main-nav{
-    margin-top: 10px;
-    list-style: none;
-    padding-left: 0px;
-    background-color: black;
-}
-
-.main-nav__item{
-    display: inline-block;
-}
-
-.main-nav__item a{
-    color:white;
-    padding: 5px;
-    text-decoration: none;
-    font-size: larger;
-}
-
-.main-nav__item a:hover {
-    color: blue;
-}
-
-.main-nav__item a:active{
-    color: red;
-}
-
-.main-nav__item a::after{
-    content: "  |  "
+.navbar .text-Intro:hover{
+    color: rgb(56, 129, 129);
 }
