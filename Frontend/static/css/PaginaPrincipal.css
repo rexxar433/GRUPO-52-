@@ -6,7 +6,12 @@ header img{
 .navbar .nav-item:hover .nav-link{   
     color: rgb(56, 129, 129);
 }
-
+.navbar .nav-item:active .nav-link{   
+    color: rgb(56, 129, 129);
+}
+.navbar .text-Intro:hover{
+    color: rgb(56, 129, 129);
+}
 .btn-busqueda{
     color: white;
 }
