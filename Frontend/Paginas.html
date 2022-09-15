@@ -10,56 +10,59 @@
   <body>
     <header>
 
-        <nav id="header" class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand text-Intro" href="#">
-                  <img src="./static/img/Icono.jpg">PeliReview
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle barra" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Género
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="https://www.google.com/">Acción</a></li>
-                      <li><a class="dropdown-item" href="https://www.google.com/">Drama</a></li>
-                      <li><a class="dropdown-item" href="https://www.google.com/">Fantasía</a></li>
-                      <li><a class="dropdown-item" href="https://www.google.com/">Psicológico</a></li>
-                      <li><a class="dropdown-item" href="https://www.google.com/">Terror</a></li>
-                      
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle barra" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Clasificación
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="https://www.google.com/">Niños</a></li>
-                      <li><a class="dropdown-item" href="https://www.google.com/">Jóvenes</a></li>
-                      <li><a class="dropdown-item" href="https://www.google.com/">Adultos</a></li>                      
-                    </ul>
-                  </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <a class="nav-link text-Pag" aria-current="page" href="PaginaIniciosesion.html" target="_blank">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-Inicio" href="RegistroUsuario.html" target="_blank">Registrarse</a>
-                    </li>
-                  </ul>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar Película" aria-label="Search">
-                    <input class="form-control me-2" type="search" placeholder="Argumento" aria-label="Search">
-                    <button class="btn btn-busqueda" type="submit">Buscar</button>
-                  </form>
-              </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-Intro" href="#">
+            <img src="./static/img/Icono.jpg">PeliReview
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">PeliReviewers Reúnanse...</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>    
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-Pag" aria-current="page" href="PaginaIniciosesion.html" target="_blank">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-Inicio" href="RegistroUsuario.html" target="_blank">Registrarse</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle barra" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Género
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.google.com/">Acción</a></li>
+                    <li><a class="dropdown-item" href="https://www.google.com/">Drama</a></li>
+                    <li><a class="dropdown-item" href="https://www.google.com/">Fantasía</a></li>
+                    <li><a class="dropdown-item" href="https://www.google.com/">Psicológico</a></li>
+                    <li><a class="dropdown-item" href="https://www.google.com/">Terror</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle barra" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Clasificación
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.google.com/">Niños</a></li>
+                    <li><a class="dropdown-item" href="https://www.google.com/">Jóvenes</a></li>
+                    <li><a class="dropdown-item" href="https://www.google.com/">Adultos</a></li>                      
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar Película" aria-label="Search">
+                <button class="btn btn-busqueda" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     
     <main id="main">
