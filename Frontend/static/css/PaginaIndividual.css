@@ -1,5 +1,25 @@
+header img{
+    width: 50px;
+    height: 50px;
+   }
+   .navbar .nav-item .nav-link{
+    color: white;
+}
+.navbar .text-Intro{
+    color: white;
+}
+.navbar .nav-item:hover .nav-link{   
+    color: rgb(56, 129, 129);
+}
+.navbar .text-Intro:hover{
+    color: rgb(56, 129, 129);
+}
+
+
+
+
 body{
-    background-color: rgb(61, 15, 15);
+    background-color: rgb(13, 63, 63);
 }
 .imaginacion img{
     width: 80%;
@@ -17,7 +37,7 @@ body{
 }
 .card{
     color: white;
-    background-color: rgba(143, 140, 161, 0.295);
+    background-color: rgba(0, 0, 0);
     
    
      width: 100%;
