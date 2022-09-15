@@ -7,7 +7,8 @@ header img{
    }
    
    .btn-busqueda{
-       color: white;
+       color: rgb(255, 255, 255);
+      
    }
    
    .btn-busqueda:hover{   
