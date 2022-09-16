@@ -38,3 +38,12 @@ insert into pelicula_genero values(1,4);
 insert into pelicula_genero values(2,2);
 insert into pelicula_genero values(3,2);
 insert into pelicula_genero values(4,1);
+
+UPDATE rol SET role = 'ROLE_ADMIN' WHERE id = 1;
+UPDATE rol SET role = 'ROLE_USER' WHERE id = 2;
+
+ALTER TABLE usuario CHANGE contrasena contrasena VARCHAR(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL;
+
+UPDATE usuario SET contrasena = '$2a$10$Q/egZCl6y6sqFjOU58YKAun59xq.X8pf0TpWrbGzvaLSZHvQp19WK' WHERE id = 1;
+UPDATE usuario SET contrasena = '$2a$10$l9jC/wf4Lcbwz.pKanqxM.VjOZYDTau/G2E/JbPRcfHvV55H92X7a' WHERE id = 2;
+UPDATE usuario SET contrasena = '$2a$10$vfspclEmLQDZ3flP32ONAeIZED/IT8kZzQvJU4uZpYrEH067AUCK6' WHERE id = 3;

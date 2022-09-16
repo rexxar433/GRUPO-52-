@@ -37,12 +37,6 @@ public class ControladorUsuario {
         return "admin/Usuarios";
     }
 
-    //@GetMapping("/Login")
-    public String login(Model model){
-        
-        return "auth/login";
-    }
-
     @GetMapping("/registrar")
     public String register(Usuario usuario){
 

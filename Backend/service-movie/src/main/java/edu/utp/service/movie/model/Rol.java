@@ -25,12 +25,4 @@ public class Rol implements Serializable {
     @OneToMany(mappedBy = "rol",cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
     private List<Usuario> usuarios;
 
-    public void agregarUsuarios(Usuario usuario){
-        if(usuario==null){
-            usuarios=new ArrayList<>();
-        }
-        usuarios.add(usuario);
-
-        usuario.setRol(this);
-    }
 }

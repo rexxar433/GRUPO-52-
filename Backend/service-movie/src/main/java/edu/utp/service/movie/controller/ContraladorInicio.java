@@ -11,17 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Slf4j
-//@CrossOrigin
-//@RequestMapping("/api/inicio")
 public class ContraladorInicio {
 
     @Autowired
     private PeliculaService peliculaService;
 
     @GetMapping("/")
-    public String inicio(Model model){
-        var peliculas=peliculaService.listarPeliculas();
-        model.addAttribute("peliculas",peliculas);
+    public String inicio(){
         return "index";
     }
 

@@ -53,7 +53,7 @@ public class Usuario implements Serializable {
     private String email;
 
     @NotEmpty(message="Por favor agregue una contrasena")
-    @Size(min=1, max=45, message="La contraseña no es valida")
+    @Size(min=1, max=128, message="La contraseña no es valida")
     private String contrasena;
 
     @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
@@ -63,13 +63,5 @@ public class Usuario implements Serializable {
     @OneToMany(mappedBy = "usuario",cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
     private List<Opinion> opiniones;
 
-    public void agregarOpiniones(Opinion opinion){
-        if(opiniones==null){
-            opiniones=new ArrayList<>();
-        }
-        opiniones.add(opinion);
-
-        opinion.setUsuario(this);
-    }
 
 }

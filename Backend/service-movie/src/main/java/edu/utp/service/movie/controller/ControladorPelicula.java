@@ -112,6 +112,7 @@ public class ControladorPelicula {
 
     @GetMapping("/agregar")
     public String agregar(Pelicula pelicula){
+
         return "movie/createPelicula";
     }
 
