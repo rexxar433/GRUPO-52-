@@ -13,7 +13,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registro){
         registro.addViewController("/").setViewName("index");
-        registro.addViewController("/api/usuario/login");
+        registro.addViewController("/auth/login");
         registro.addViewController("/errors/Template403").setViewName("/errors/Template403");
     }
 }

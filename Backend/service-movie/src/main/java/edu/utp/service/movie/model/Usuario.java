@@ -50,7 +50,8 @@ public class Usuario implements Serializable {
     @NotEmpty(message="Por favor agregue un email")
     @Size(min=1, max=70, message="El email es invalido")
     @Email(message="No es un correo valido. ")
-    private String email;
+    @Column(name="email")
+    private String username; //No se coloca email por el tema de Spring security
 
     @NotEmpty(message="Por favor agregue una contrasena")
     @Size(min=1, max=128, message="La contraseña no es valida")

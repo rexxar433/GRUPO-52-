@@ -87,7 +87,7 @@
                             <input type="number" placeholder="Edad" name="edad" th:field="*{edad}" class="form-control" autocomplete=none required  />
                         </div>
                         <div class="col mb-3">
-                            <input type="text" placeholder="Correo Electrònico"  th:field="*{email}" name="correo" class="form-control" autocomplete=none
+                            <input type="text" placeholder="Correo Electrònico"  th:field="*{username}" name="correo" class="form-control" autocomplete=none
                                    required />
                             <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
                         </div>

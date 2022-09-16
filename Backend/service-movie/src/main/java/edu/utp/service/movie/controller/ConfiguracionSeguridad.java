@@ -34,7 +34,7 @@ public class ConfiguracionSeguridad extends WebSecurityConfigurerAdapter {
                     .hasAnyRole("ADMIN","USER")
                 .and()
                     .formLogin()
-                    .loginPage("/api/usuario/login")
+                    .loginPage("/login")
                 .and()
                     .exceptionHandling().accessDeniedPage("/errors/Template403");
     }
