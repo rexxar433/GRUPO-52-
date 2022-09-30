@@ -1,8 +1,7 @@
-package edu.utp.service.movie.repository;
+package edu.utp.peliculas.repository;
 
-import edu.utp.service.movie.model.Usuario;
+import edu.utp.peliculas.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
