@@ -16,20 +16,48 @@
     <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
     <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-    <link rel="stylesheet" href="@{/css/PaginaPrincipal.css}"/>
+    <link rel="stylesheet" th:href="@{/css/PaginaPrincipal.css}"/>
 <body>
-<header th:replace="layout/page :: header"></header>
+<header th:replace="layout/page :: header">
+    <nav id="header" class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-Intro" href="#">
+            <img th:src="@{/img/Icono.jpg}">PeliReview
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-Pag" aria-current="page" th:href="@{/api/PaginaIniciosesion/}">Iniciar Sesión</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link text-Pag" aria-current="page" th:href="@{/api/RegistroUsuario/}">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-Pag" aria-current="page" th:href="@{/api/Clasificacion/}">Clasificar película</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar Película" aria-label="Search">
+              <button class="btn btn-busqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
 <main id="main">
     <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause=“false”>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="static\img\Avengers.jpg" class="d-block w-100" alt="Avengers">
+                <img th:src="@{/img/Avengers.jpg}" class="d-block w-100" alt="Avengers">
             </div>
             <div class="carousel-item">
-                <img src="static\img\StarWars.jpg" class="d-block w-100" alt="StarWars">
+                <img th:src="@{/img/StarWars.jpg}" class="d-block w-100" alt="StarWars">
             </div>
             <div class="carousel-item">
-                <img src="static\img\Batman.jpg" class="d-block w-100" alt="Batman">
+                <img th:src="@{/img/Batman.jpg}" class="d-block w-100" alt="Batman">
             </div>
         </div>
         <div class="overlay carousel-caption">
@@ -61,7 +89,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="static\img\Avatar1.jpg" class="card-img-top" alt="Avatar">
+                    <img th:src="@{/img/Avatar1.jpg}" class="card-img-top" alt="Avatar">
                     <div class="card-body">
                         <h5 class="card-title">Películas más Taquillera</h5>
                         <p class="card-text"> Avatar, ambientada en el año 2154 y los acontecimientos que narra se
@@ -79,7 +107,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="static\img\Obreros.jpg" class="card-img-top" alt="Obreros">
+                    <img th:src="@{/img/Obreros.jpg}" class="card-img-top" alt="Obreros">
                     <div class="card-body">
                         <h5 class="card-title">Primera película en la historia</h5>
                         <p class="card-text">Sólo son 46 segundos, pero han sido los 46 segundos que más profundamente
@@ -125,7 +153,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="static\img\guion.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/guion.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                             <h5 class="card-title">Guion-Argumento</h5>
                             <p class="card-text">El argumento es el ámbito de fondo en el que se mueve
@@ -133,14 +161,14 @@
                                 las líneas fundamentales de la acción, las principales características de
                                 los protagonistas y la sucesión de los hechos más importantes con su
                                 cronología de tiempo y espacio.<br><a
-                                        href="https://blogs.ffyh.unc.edu.ar/suenosdeunguionista/?p=49"
+                                        th:href="@{https://blogs.ffyh.unc.edu.ar/suenosdeunguionista/?p=49}"
                                         target="_blank">Referencia</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="static\img\actuacion.jpg" class="card-img-top" alt="actuacion">
+                        <img th:src="@{/img/actuacion.jpg}" class="card-img-top" alt="actuacion">
                         <div class="card-body">
                             <h5 class="card-title">Actuación</h5>
                             <p class="card-text">La actuación es el trabajo realizado por un actor o actriz
@@ -148,29 +176,29 @@
                                 La verdadera creación en la actuación se puede realizar una representación
                                 por medio del vestuario, el maquillaje, los decorados, los accesorios, la
                                 iluminación, la música y los efectos especiales. <br><a
-                                        href="https://www.cinemateca.gob.ni/la-actuacion-en-el-cine/"
+                                        th:href="@{https://www.cinemateca.gob.ni/la-actuacion-en-el-cine/}"
                                         target="_blank">Referencia</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="static\img\escena.jpg" class="card-img-top" alt="escena">
+                        <img th:src="@{/img/escena.jpg}" class="card-img-top" alt="escena">
                         <div class="card-body">
                             <h5 class="card-title">Escenas</h5>
                             <p class="card-text">Una escena es una unidad de espacio y/o tiempo. Es decir,
                                 un fragmento de historia que transcurre de forma ininterrumpida dentro del
                                 mismo decorado. Y esto se aplica a cualquier producción audiovisual. Da
                                 igual que sea un cortometraje, un largometraje, una serie o un vídeo
-                                corporativo. <br><a href="https://aprendercine.com/escena-y-secuencia-diferencias/#
-                             :~:text=Una%20escena%20es%20una%20unidad,serie%20o%20un%20v%C3%ADdeo%20corporativo."
+                                corporativo. <br><a th:href="@{https://aprendercine.com/escena-y-secuencia-diferencias/#
+                             :~:text=Una%20escena%20es%20una%20unidad,serie%20o%20un%20v%C3%ADdeo%20corporativo.}"
                                                     target="_blank">Referencia</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="static\img\idea.png" class="card-img-top" alt="idea">
+                        <img th:src="@{/img/idea.png}" class="card-img-top" alt="idea">
                         <div class="card-body">
                             <h5 class="card-title">Originalidad</h5>
                             <p class="card-text">Ser el primero en plasmar una idea no la hace precisamente original.
@@ -178,7 +206,7 @@
                                 estremecer tus pensamientos. Sentirte conectado con los personajes o tener un viaje
                                 hacia ese mundo fantástico. La forma de conectar con el espectador es fundamental
                                 para contar una historia. <br><a
-                                        href="https://cinefilosfrustrados.com/originalidad-cineaquaocurre-industria/"
+                                        th:href="@{https://cinefilosfrustrados.com/originalidad-cineaquaocurre-industria/}"
                                         target="_blank">Referencia</a></p>
                         </div>
                     </div>
@@ -186,6 +214,24 @@
             </div>
         </div>
 </section>
-<footer th:replace="layout/page :: footer"></footer>
+<footer th:replace="layout/page :: footer">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center text-uppercase">
+                <a th:href="@{https://www.marvel.com/}"  target="_blank">Marvel</a>
+            </div>
+            <div class="col text-center text-uppercase">
+                <a th:href="@{https://www.dc.com/}"  target="_blank">DC</a>
+            </div>
+            <div class="col text-center text-uppercase">
+                <a th:href="@{https://www.starwars.com/}"  target="_blank">Star Wars</a>
+            </div>
+            <div class="col text-center text-uppercase">
+                <a th:href="@{https://intl.startrek.com/}"  target="_blank">Star Trek</a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
