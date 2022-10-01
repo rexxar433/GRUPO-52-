@@ -5,53 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c9ef7bc-7ae9-46af-832c-87614a612545" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/PeliculasApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/Controlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorUsuarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Clasificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Genero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Opinion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Pelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Rol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/ClasificacionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/GeneroRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/OpinionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/PeliculaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/RolRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/UsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/ClasificacionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/GeneroService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/OpinionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/PeliculaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/RolService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/impl/ClasificacionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/impl/GeneroServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/impl/OpinionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/impl/PeliculaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/impl/RolServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/impl/UsuarioServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/usuario/editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/usuario/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/utp/peliculas/PeliculasApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/controller/ConfiguracionSeguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/controller/ConfiguracionSeguridad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/controller/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/controller/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-movie/src/main/java/edu/utp/service/movie/service/impl/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-movie/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../service-movie/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ConfiguracionSeguridad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorPelicula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioDetalle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/BusquedaFallida.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Clasificacion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Iniciosesion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/PagAdmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/PaginaError.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/PaginaIndividual.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/PaginaPrincipal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Paginas.Css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Registro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Avatar1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Avengers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Batman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Cinta2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Dinosaurio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Icono.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Lord.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Obreros.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Rapido5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Saw5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/StarWars.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/TitanesDelPacifico.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/actuacion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/escena.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/guion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/idea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/robot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/PaginaPrincipal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Plantilla/Plantilla.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/genero/editar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/genero/listar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/opinion/editar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/opinion/listar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pelicula/editar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pelicula/listar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/Template403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario/RegistroUsuario.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +63,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -111,19 +112,36 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Programacion/Mision Tic - Ciclo 3/GRUPO-52-/Backend/peliculas/src/main/java/edu/utp/peliculas/service/impl",
+    "last_opened_file_path": "D:/Programacion/Mision Tic - Ciclo 3/GRUPO-52-/Backend/peliculas/src/main/resources/templates/admin/genero",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programacion\Mision Tic - Ciclo 3\GRUPO-52-\Backend\peliculas\src\main\resources\templates\admin\genero" />
+      <recent name="D:\Programacion\Mision Tic - Ciclo 3\GRUPO-52-\Backend\peliculas\src\main\resources\templates\admin\opinion" />
+      <recent name="D:\Programacion\Mision Tic - Ciclo 3\GRUPO-52-\Backend\peliculas\src\main\resources\templates\admin\pelicula" />
       <recent name="D:\Programacion\Mision Tic - Ciclo 3\GRUPO-52-\Backend\peliculas\src\main\java\edu\utp\peliculas\service\impl" />
       <recent name="D:\Programacion\Mision Tic - Ciclo 3\GRUPO-52-\Backend\peliculas\src\main\java\edu\utp\peliculas\service" />
-      <recent name="D:\Programacion\Mision Tic - Ciclo 3\GRUPO-52-\Backend\peliculas\src\main\java\edu\utp\peliculas\model" />
-      <recent name="D:\Programacion\Mision Tic - Ciclo 3\GRUPO-52-\Backend\peliculas\src\main\java\edu\utp\peliculas\repository" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.utp.peliculas" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PeliculasApplication">
+    <configuration name="EncriptarPassword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.utp.peliculas.EncriptarPassword" />
+      <module name="peliculas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.utp.peliculas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PeliculasApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.utp.peliculas.PeliculasApplication" />
       <module name="peliculas" />
@@ -140,6 +158,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.PeliculasApplication" />
+        <item itemvalue="Application.EncriptarPassword" />
       </list>
     </recent_temporary>
   </component>

@@ -6,7 +6,7 @@ import edu.utp.peliculas.model.Usuario;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface UsuarioService {
+public interface UsuarioService{
     public ArrayList<Usuario> listarUsuarios();
 
     public void guardar(Usuario usuario);

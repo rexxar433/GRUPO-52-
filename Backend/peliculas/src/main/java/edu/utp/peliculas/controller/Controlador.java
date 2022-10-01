@@ -5,11 +5,11 @@ import edu.utp.peliculas.model.*;
 import edu.utp.peliculas.service.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +31,8 @@ public class Controlador {
 
     @Autowired
     private RolService rolService;
+
+
 
     //Listar Usuarios,Generos,Peliculas,Categorias,Opinion
     @GetMapping("/usuario")
@@ -57,7 +59,8 @@ public class Controlador {
     @GetMapping("/opinion/{id}")
     public String listarOpiniones(@PathVariable("id") Long id,Model model){
         List<Opinion> opiniones=opinionService.findbyPeliculaId(id);
-        model.addAttribute("peliculas",opiniones);
+        //log.info(opiniones.toString());
+        model.addAttribute("opiniones",opiniones);
         return "admin/opinion/listar";
     }
 
@@ -94,29 +97,29 @@ public class Controlador {
         return "redirect:/admin/opinion/listar";
     }
 
-    //Editar  Usuarios,Generos,Peliculas,Categorias.
-    @PutMapping("/usuario/editar/{id}")
+    //Editar Usuarios,Generos,Peliculas,Categorias.
+    @GetMapping("/usuario/editar/{id}")
     public String editarUsuario(@PathVariable("id") Long id,Model model){
        Usuario usuario= usuarioService.buscar(id);
        model.addAttribute("usuario",usuario);
        return "admin/usuario/editar";
     }
 
-    @PutMapping("/genero/editar/{id}")
+    @GetMapping("/genero/editar/{id}")
     public String editarGenero(@PathVariable("id") Long id,Model model){
         Genero genero= generoService.buscar(id);
         model.addAttribute("genero",genero);
         return "admin/genero/editar";
     }
 
-    @PutMapping("/pelicula/editar/{id}")
+    @GetMapping("/pelicula/editar/{id}")
     public String editarPelicula(@PathVariable("id") Long id,Model model){
         Pelicula pelicula= peliculaService.buscar(id);
         model.addAttribute("pelicula",pelicula);
         return "admin/pelicula/editar";
     }
 
-    @PutMapping("/opinion/editar/{id}")
+    @GetMapping("/opinion/editar/{id}")
     public String editarOpinion(@PathVariable("id") Long id,Model model){
         Opinion opinion= opinionService.buscar(id);
         model.addAttribute("opinion",opinion);
@@ -130,6 +133,7 @@ public class Controlador {
     public String crearUsuario(@Valid Usuario usuario, Errors errores){
         if(!errores.hasErrors()){
             Rol rol=rolService.buscar(2);
+            usuario.setContrasena(codificarPassword(usuario.getContrasena()));
             usuario.setRol(rol);
             usuarioService.guardar(usuario);
             return "redirect:/admin/usuario/listar";
@@ -193,5 +197,13 @@ public class Controlador {
 
 
     //Buscar Usuarios,Generos,Peliculas,Categorias.
+
+
+
+    //Codificar Contrasena
+    public String codificarPassword(String password){
+        BCryptPasswordEncoder encoder=new BCryptPasswordEncoder();
+        return encoder.encode(password);
+    }
 
 }
