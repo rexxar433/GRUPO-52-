@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,11 +32,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-Pag" aria-current="page" href="https://www.google.com/" target="_blank">Página
+                        <a class="nav-link text-Pag" aria-current="page" th:href="@{/}" target="_blank">Página
                             Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-Inicio" href="https://www.google.com/" target="_blank">Iniciar Sesión</a>
+                        <a class="nav-link text-Inicio" th:href="@{/Login}" target="_blank">Iniciar Sesión</a>
                     </li>
                 </ul>
             </div>

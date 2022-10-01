@@ -1,19 +1,31 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Páginas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="./static/img/Icono.jpg">
-    <link rel="stylesheet" href="./static/css/Paginas.Css"/>
+    <link
+            rel="stylesheet"
+            th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+    />
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}" />
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <link rel="icon" type="image/x-icon" th:href="@{/img/Icono.jpg}">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css}"/>
+    
+    <link rel="stylesheet" th:href="@{/css/Paginas.css}"/>
   <body>
     <header>
 
       <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand text-Intro" href="#">
-            <img src="./static/img/Icono.jpg">PeliReview
+            <img src="@{/img/Icono.jpg}">PeliReview
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -26,10 +38,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link text-Pag" aria-current="page" href="PaginaPrincipal.html" >Página Principal</a>
+                  <a class="nav-link text-Pag" aria-current="page" th:href="@{/}" >Página Principal</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-Pag" aria-current="page" href="PaginaIniciosesion.html" >Iniciar Sesión</a>
+                  <a class="nav-link text-Pag" aria-current="page" th:href="@{/Login}" >Iniciar Sesión</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-Inicio" href="RegistroUsuario.html" >Registrarse</a>
@@ -42,11 +54,11 @@
                     Género
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://www.google.com/">Acción</a></li>
-                    <li><a class="dropdown-item" href="https://www.google.com/">Drama</a></li>
-                    <li><a class="dropdown-item" href="https://www.google.com/">Fantasía</a></li>
-                    <li><a class="dropdown-item" href="https://www.google.com/">Psicológico</a></li>
-                    <li><a class="dropdown-item" href="https://www.google.com/">Terror</a></li>
+                    <li><a class="dropdown-item" th:href="@{}">Acción</a></li>
+                    <li><a class="dropdown-item" th:href="@{}">Drama</a></li>
+                    <li><a class="dropdown-item" th:href="@{}">Fantasía</a></li>
+                    <li><a class="dropdown-item" th:href="@{}">Psicológico</a></li>
+                    <li><a class="dropdown-item" th:href="@{}">Terror</a></li>
                     
                   </ul>
                 </li>
@@ -55,9 +67,9 @@
                     Clasificación
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://www.google.com/">Niños</a></li>
-                    <li><a class="dropdown-item" href="https://www.google.com/">Jóvenes</a></li>
-                    <li><a class="dropdown-item" href="https://www.google.com/">Adultos</a></li>                      
+                    <li><a class="dropdown-item" th:href="@{}">Niños</a></li>
+                    <li><a class="dropdown-item" th:href="@{}">Jóvenes</a></li>
+                    <li><a class="dropdown-item" th:href="@{}">Adultos</a></li>                      
                   </ul>
                 </li>
               </ul>
@@ -78,39 +90,39 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="./static/img/Avengers.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/Avengers.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                           <h5 class="card-title"></h5>
-                          <p class="card-text">Avengers: Endgame<br><a href="PaginaIndividual.html" >Calificación.</a></p>
+                          <p class="card-text">Avengers: Endgame<br><a th:href="@{PaginaIndividual.html}" >Calificación.</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="./static/img/Batman.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/Batman.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                           <h5 class="card-title"></h5>
-                          <p class="card-text">DC<br><a href="PaginaIndividual.html"  
+                          <p class="card-text">DC<br><a th:href="@{PaginaIndividual.html}"  
                             >Calificación.</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="./static/img/StarWars.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/StarWars.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                           <h5 class="card-title"></h5>
-                          <p class="card-text">Star Wars: el despertar de la fuerza<br><a href="PaginaIndividual.html"  
+                          <p class="card-text">Star Wars: el despertar de la fuerza<br><a th:href="@{PaginaIndividual}"  
                             >Calificación.</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="./static/img/Lord.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/Lord.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                           <h5 class="card-title"></h5>
-                          <p class="card-text">El señor de los anillos: el retorno del rey<br><a href="PaginaIndividual.html"  
+                          <p class="card-text">El señor de los anillos: el retorno del rey<br><a th:href="@{PaginaIndividual}"  
                             >Calificación.</a></p>
                         </div>
                     </div>
@@ -124,40 +136,40 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="./static/img/Dinosaurio.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/Dinosaurio.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                           <h5 class="card-title"></h5>
-                          <p class="card-text">Dinosaurio<br><a href="PaginaIndividual.html"  
+                          <p class="card-text">Dinosaurio<br><a th:href="@{PaginaIndividual}"  
                             >Calificación.</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="./static/img/TitanesDelPacifico.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/TitanesDelPacifico.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                           <h5 class="card-title"></h5>
-                          <p class="card-text">Titanes del pacífico<br><a href="PaginaIndividual.html"  
+                          <p class="card-text">Titanes del pacífico<br><a th:href="@{PaginaIndividual}"  
                             >Calificación.</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="./static/img/Rapido5.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/Rapido5.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                           <h5 class="card-title"></h5>
-                          <p class="card-text">Rápido y furioso 5: Sin control<br><a href="PaginaIndividual.html"  
+                          <p class="card-text">Rápido y furioso 5: Sin control<br><a th:href="@{PaginaIndividual}"  
                             >Calificación.</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card tarjeta">
-                        <img src="./static/img/Saw5.jpg" class="card-img-top" alt="guion">
+                        <img th:src="@{/img/Saw5.jpg}" class="card-img-top" alt="guion">
                         <div class="card-body">
                           <h5 class="card-title"></h5>
-                          <p class="card-text">Saw V<br><a href="PaginaIndividual.html"  
+                          <p class="card-text">Saw V<br><a th:href="@{PaginaIndividual}"  
                             >Calificación.</a></p>
                         </div>
                     </div>
@@ -169,16 +181,16 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center text-uppercase">
-                    <a href="https://www.marvel.com/"  target="_blank">Marvel</a>
+                    <a th:href="@{https://www.marvel.com/}"  target="_blank">Marvel</a>
                 </div>
                 <div class="col text-center text-uppercase">
-                    <a href="https://www.dc.com/"  target="_blank">DC</a>
+                    <a th:href="@{https://www.dc.com/}"  target="_blank">DC</a>
                 </div>
                 <div class="col text-center text-uppercase">
-                    <a href="https://www.starwars.com/"  target="_blank">Star Wars</a>
+                    <a th:href="@{https://www.starwars.com/}"  target="_blank">Star Wars</a>
                 </div>
                 <div class="col text-center text-uppercase">
-                    <a href="https://intl.startrek.com/"  target="_blank">Star Trek</a>
+                    <a th:href="@{https://intl.startrek.com/}"  target="_blank">Star Trek</a>
                     
                 </div>
             </div>

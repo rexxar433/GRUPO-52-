@@ -1,20 +1,30 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clasifiación</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="static\img\Icono.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link
+            rel="stylesheet"
+            th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+    />
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}" />
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <link rel="icon" type="image/x-icon" th:href="@{/img/Icono.jpg}">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css}"/>
     
-    <link rel="stylesheet" href="static/css/Clasificacion.css"/>
+    <link rel="stylesheet" th:href="@{/css/Clasificacion.css}"/>
   <body>
     <header>
         <nav id="header" class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand text-Intro" href="#">
-                <img src="static\img\Icono.jpg">PeliReview
+                <img th:src="@{/img/Icono.jpg}">PeliReview
             </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,7 +32,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link text-Pag" aria-current="page" href="PaginaPrincipal.html">Página principal</a>
+                    <a class="nav-link text-Pag" aria-current="page" th:href="@{/}">Página principal</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-Inicio" href="Paginas.html" >Películas</a>
@@ -46,7 +56,7 @@
                 <div class="row">
                     <div class="col-md-6  text-center controles">
                         <h3> Guion-Argumento</h3>
-                        <img src="static\img\guion.jpg">
+                        <img th:src="@{/img/guion.jpg}">
                     </div>
                     <div class="col-md-6 text-center">
                       
@@ -68,7 +78,7 @@
                 <div class="row">
                     <div class="col-md-6  text-center controles">
                         <h3>Actuación</h3>
-                        <img src="static\img\actuacion.jpg">
+                        <img th:src="@{/img/actuacion.jpg}">
                     </div>
                     <div class="col-md-6 text-center">
                       
@@ -90,7 +100,7 @@
                 <div class="row">
                     <div class="col-md-6  text-center controles">
                         <h3>Escenas</h3>
-                        <img src="static\img\escena.jpg">
+                        <img th:src="@{/img/escena.jpg}">
                     </div>
                     <div class="col-md-6 text-center">
                       
@@ -112,7 +122,7 @@
                 <div class="row">
                     <div class="col-md-6 text-center  controles">
                         <h3>Originalidad</h3>
-                        <img src="static\img\idea.png">
+                        <img th:src="@{/img/idea.png}">
                     </div>
                     <div class="col-md-6 text-center">
                       
@@ -141,7 +151,6 @@
             </form>
         </div>
     </main>    
-    <script src="static/js/Rating.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script th:src="@{/js/Rating.js}"></script>
   </body>
 </html>
