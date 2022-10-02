@@ -25,6 +25,16 @@ public class ConfiguracionSeguridad extends WebSecurityConfigurerAdapter {
         build.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
     }
 
+    /*@Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.inMemoryAuthentication()
+                .withUser("user1").password(passwordEncoder().encode("user1Pass")).roles("USER")
+                .and()
+                .withUser("user2").password(passwordEncoder().encode("user2Pass")).roles("USER")
+                .and()
+                .withUser("admin").password(passwordEncoder().encode("adminPass")).roles("ADMIN");
+    }*/
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()
@@ -35,6 +45,7 @@ public class ConfiguracionSeguridad extends WebSecurityConfigurerAdapter {
                 .and()
                     .formLogin()
                     .loginPage("/login")
+                    //.loginProcessingUrl("/login")
                 .and()
                     .exceptionHandling().accessDeniedPage("/error/403");
     }

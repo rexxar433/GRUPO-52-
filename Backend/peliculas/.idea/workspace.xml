@@ -5,54 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c9ef7bc-7ae9-46af-832c-87614a612545" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ConfiguracionSeguridad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorPelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioDetalle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/BusquedaFallida.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Clasificacion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Iniciosesion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/PagAdmin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/PaginaError.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/PaginaIndividual.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/PaginaPrincipal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Paginas.Css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Registro.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Avatar1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Avengers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Batman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Cinta2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Dinosaurio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Icono.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Lord.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Obreros.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Rapido5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Saw5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/StarWars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/TitanesDelPacifico.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/actuacion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/escena.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/guion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/idea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/robot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/PaginaPrincipal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Plantilla/Plantilla.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/genero/editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/genero/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/opinion/editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/opinion/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pelicula/editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pelicula/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/Template403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario/RegistroUsuario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ConfiguracionSeguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ConfiguracionSeguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioDetalle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioDetalle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usuario/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/CrearPelicula.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/CrearPelicula.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/PagAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/PagAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/PaginaError.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/PaginaError.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/PaginaIndividual.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/PaginaIndividual.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/PaginaIniciosesion.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/PaginaIniciosesion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/Paginas.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/Paginas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/RegistroUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/RegistroUsuario.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,16 +70,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Programacion/Mision Tic - Ciclo 3/GRUPO-52-/Backend/peliculas/src/main/resources/templates/admin/genero",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programacion/Mision Tic - Ciclo 3/GRUPO-52-/Backend/peliculas/src/main/resources/templates/admin/genero&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programacion\Mision Tic - Ciclo 3\GRUPO-52-\Backend\peliculas\src\main\resources\templates\admin\genero" />

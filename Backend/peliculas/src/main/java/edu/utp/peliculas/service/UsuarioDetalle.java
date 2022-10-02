@@ -30,13 +30,12 @@ public class UsuarioDetalle implements UserDetailsService {
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Usuario usuario=usuarioRepository.findByEmail(email);
-        log.info("Este es el rol"+usuario.getRol().getRole());
         if(usuario==null){
             throw new UsernameNotFoundException(email);
         }
         var rol=new ArrayList<GrantedAuthority>();
+        log.info("Este es el rol "+usuario.getRol().getRole());
         rol.add(new SimpleGrantedAuthority(usuario.getRol().getRole()));
-        log.info("Este es el rol"+usuario.getRol().getRole());
         return new User(usuario.getEmail(), usuario.getContrasena(), rol);
     }
 }
