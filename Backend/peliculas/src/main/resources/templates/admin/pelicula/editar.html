@@ -20,7 +20,7 @@
 <body class="bg-dark">
 <ul th:replace="layout/Plantilla :: navbar_admin"></ul>
 <div class="container mt-4">
-    <form class="bg-info p-3 rounded-2" method="POST" th:action="@{/admin/pelicula/crear}" entype="multipart/form-data" th:object="${pelicula}">
+    <form class="bg-info p-3 rounded-2" method="POST" th:action="@{/admin/pelicula/crear}" enctype="multipart/form-data" th:object="${pelicula}">
         <input type="hidden" name="id" th:field="*{id}">
         <div class="row mb-3">
             <div class="col text-center">
@@ -62,7 +62,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select th:field="*{clasificacion}" class="form-control" id="exampleFormControlSelect1">
                     <option th:each="clasificacion : ${clasificaciones}" th:value="${clasificacion.id}" th:text="${clasificacion.nombre}"></option>
                 </select>
             </div>
@@ -74,7 +74,7 @@
         </div>
         <div class="row">
             <div class="col mb-4">
-                <h5>Seleccione una imagen( MAX 5 MB)</h5> <input name="archivo" id="archivo" type="file" accept=".jpg">
+                <h5>Seleccione una imagen( MAX 5 MB)</h5> <input name="file" id="file" type="file" accept=".jpg">
             </div>
         </div>
         <div class="row text-center col mb-3">
