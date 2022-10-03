@@ -20,7 +20,7 @@
 <body class="bg-dark">
 <ul th:replace="layout/Plantilla :: navbar_admin"></ul>
 <div class="container mt-4">
-    <form class="bg-info p-3 rounded-2" method="POST" th:action="@{/admin/pelicula/crear}" th:object="${pelicula}">
+    <form class="bg-info p-3 rounded-2" method="POST" th:action="@{/admin/pelicula/crear}" entype="multipart/form-data" th:object="${pelicula}">
         <input type="hidden" name="id" th:field="*{id}">
         <div class="row mb-3">
             <div class="col text-center">
@@ -50,25 +50,20 @@
         </div>
         <div class="row">
             <div class="col">
-                <select name="cars" id="cars" multiple>
-                    <option value="Terror">Terror</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Drama">Drama</option>
-                    <option value="Acción">Acción</option>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option th:each="genero : ${generos}" th:value="${genero.id}" th:text="${genero.nombre}"></option>
                 </select>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <h5>Selecciona una clasificación de acuerdo a al edad para la película.</h5>
+                <h5>Selecciona una clasificación de acuerdo a la edad para la película.</h5>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <select name="cars" id="cars">
-                    <option value="Niños (0-13 años)">Niños (0-13 años)</option>
-                    <option value="Jóvenes (13-18 años)">Jóvenes (13-18 años)</option>
-                    <option value="Adultos (>18 años)">Adultos (>18 años)</option>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option th:each="clasificacion : ${clasificaciones}" th:value="${clasificacion.id}" th:text="${clasificacion.nombre}"></option>
                 </select>
             </div>
         </div>
@@ -79,7 +74,7 @@
         </div>
         <div class="row">
             <div class="col mb-4">
-                <h5>Seleccione una imagen de portada</h5> <input name="archivo" id="archivo" type="file" accept=".jpg">
+                <h5>Seleccione una imagen( MAX 5 MB)</h5> <input name="archivo" id="archivo" type="file" accept=".jpg">
             </div>
         </div>
         <div class="row text-center col mb-3">
@@ -89,5 +84,6 @@
         </div>
     </form>
 </div>
+<footer th:replace="layout/Plantilla :: footer_admin"></footer>
 </body>
 </html>

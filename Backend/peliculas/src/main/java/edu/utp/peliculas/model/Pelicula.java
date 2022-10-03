@@ -42,7 +42,7 @@ public class Pelicula implements Serializable {
 
 	@Lob
 	@Column(name="imagen")
-	private byte[] imagen;
+	private String imagen;
 
 	@ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
 	@JoinColumn(name="clasificacion_id")

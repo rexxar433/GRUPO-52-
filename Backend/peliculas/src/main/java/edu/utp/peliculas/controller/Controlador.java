@@ -10,7 +10,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
 import javax.validation.Valid;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,9 +34,10 @@ public class Controlador {
     private PeliculaService peliculaService;
     @Autowired
     private OpinionService opinionService;
-
     @Autowired
     private RolService rolService;
+    @Autowired
+    private ClasificacionService clasificacionService;
 
 
 
@@ -116,6 +123,10 @@ public class Controlador {
     @GetMapping("/pelicula/editar/{id}")
     public String editarPelicula(@PathVariable("id") Long id,Model model){
         Pelicula pelicula= peliculaService.buscar(id);
+        var clasificaciones=clasificacionService.listarClasificaciones();
+        var generos=generoService.listarGeneros();
+        model.addAttribute("clasificaciones",clasificaciones);
+        model.addAttribute("generos",generos);
         model.addAttribute("pelicula",pelicula);
         return "admin/pelicula/editar";
     }
@@ -166,16 +177,32 @@ public class Controlador {
 
     /*INICIO PELICULA*/
     @PostMapping("/pelicula/crear")
-    public String crearPelicula(@Valid Pelicula pelicula, Errors errores){
+    public String crearPelicula(@Valid Pelicula pelicula,Errors errores, @RequestParam("file")MultipartFile imagen,Model model) throws IOException {
+        var clasificaciones=clasificacionService.listarClasificaciones();
+        var generos=generoService.listarGeneros();
+        model.addAttribute("clasificaciones",clasificaciones);
+        model.addAttribute("generos",generos);
         if(!errores.hasErrors()){
             peliculaService.guardar(pelicula);
+            if(!imagen.isEmpty()){
+                Path directorio= Paths.get("src//main//resource//static/img/pelicula");
+                String absoluta= directorio.toFile().getAbsolutePath();
+                byte[] bytesImg = imagen.getBytes();
+                Path rutaCompleta=Paths.get(absoluta+ "//"+imagen.getOriginalFilename());
+                Files.write(rutaCompleta,bytesImg);
+                pelicula.setImagen(imagen.getOriginalFilename());
+            }
             return "redirect:/admin/pelicula/listar";
         }else{
             return "admin/pelicula/editar";
         }
     }
     @GetMapping("/pelicula/crear")
-    public String agregarPelicula(Pelicula pelicula){
+    public String agregarPelicula(Pelicula pelicula,Model model){
+        var clasificaciones=clasificacionService.listarClasificaciones();
+        var generos=generoService.listarGeneros();
+        model.addAttribute("clasificaciones",clasificaciones);
+        model.addAttribute("generos",generos);
         return "admin/pelicula/editar";
     }
     /*FIN PELICULA*/

@@ -87,7 +87,7 @@
         <div class="row">
             <div class="mb-4 col-md-3" th:each="pelicula,i : ${peliculas}">
                 <div class="card tarjeta">
-                    <img th:src="@{/img/Avengers.jpg}" class="card-img-top" alt="guion">
+                    <img th:src="@{/img/pelicula/}+${pelicula.imagen}" class="card-img-top" alt="guion">
                     <div class="card-body">
                         <h5 th:text="${pelicula.titulo}" class="card-title"></h5>
                         <span th:text="${pelicula.argumento}" class="card-text"></span><br>
@@ -112,7 +112,6 @@
             </div>
             <div class="col text-center text-uppercase">
                 <a th:href="@{https://intl.startrek.com/}" target="_blank">Star Trek</a>
-
             </div>
         </div>
     </div>
