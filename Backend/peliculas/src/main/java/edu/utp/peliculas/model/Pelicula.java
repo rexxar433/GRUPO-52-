@@ -40,7 +40,9 @@ public class Pelicula implements Serializable {
 
 	private double puntuacion;
 
-	//private image imagen;
+	@Lob
+	@Column(name="imagen")
+	private byte[] imagen;
 
 	@ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
 	@JoinColumn(name="clasificacion_id")

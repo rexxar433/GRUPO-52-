@@ -35,6 +35,7 @@ public class Controlador {
 
 
     //Listar Usuarios,Generos,Peliculas,Categorias,Opinion
+
     @GetMapping("/usuario")
     public String listarUsuarios(Model model){
         ArrayList<Usuario> usuarios=usuarioService.listarUsuarios();

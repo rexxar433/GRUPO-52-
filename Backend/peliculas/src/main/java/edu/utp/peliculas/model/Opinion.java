@@ -19,7 +19,7 @@ public class Opinion implements Serializable {
     private Long id;
 
     @NotEmpty(message="Por favor agregue una opinion.")
-    private String opinion;
+    private String comentario;
 
     @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
     @JoinColumn(name="usuario_id")

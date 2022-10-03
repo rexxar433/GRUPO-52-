@@ -5,18 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c9ef7bc-7ae9-46af-832c-87614a612545" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/CrearPelicula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Paginas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/Plantilla.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ConfiguracionSeguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ConfiguracionSeguridad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioDetalle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioDetalle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorPelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/ControladorUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/controller/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Opinion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Opinion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/model/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/impl/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/utp/peliculas/service/impl/UsuarioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/PaginaPrincipal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/PaginaPrincipal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Plantilla/Plantilla.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pelicula/PaginaIndividual.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/genero/editar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/genero/editar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/genero/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/genero/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/opinion/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/opinion/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pelicula/editar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pelicula/editar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pelicula/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pelicula/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/usuario/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/usuario/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usuario/RegistroUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario/RegistroUsuario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usuario/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Frontend/CrearPelicula.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/CrearPelicula.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/PagAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/PagAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/PaginaError.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/PaginaError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/PaginaIndividual.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/PaginaIndividual.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/PaginaIniciosesion.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/PaginaIniciosesion.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Frontend/Paginas.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/Paginas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/RegistroUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/RegistroUsuario.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>

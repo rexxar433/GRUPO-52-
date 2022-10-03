@@ -16,10 +16,12 @@
     <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     <title>Usuarios</title>
 </head>
-<body>
+<body class="bg-dark">
+<ul th:replace="layout/Plantilla :: navbar_admin"></ul>
+
 <div class="container text-center">
     <div class="col" th:if="${usuarios != null and !usuarios.empty}">
-        <table class="table table-dark table-striped">
+        <table class="table table-info table-striped">
             <thead class="thead-dark">
             <tr>
                 <th scope="col">id</th>
@@ -47,8 +49,9 @@
         </table>
     </div>
     <div class="col" th:if="${usuarios == null or usuarios.empty}">
-        <span>No Hay usuarios</span>
+        <span class="text-light bg-dark">No Hay usuarios</span>
     </div>
 </div>
+<footer th:replace="layout/Plantilla :: footer_admin"></footer>
 </body>
 </html>

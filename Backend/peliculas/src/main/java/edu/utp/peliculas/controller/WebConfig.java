@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
         //Cualquiera puede entrar a estas direcciones.
         registro.addViewController("/error/403").setViewName("/error/Template403");
         registro.addViewController("/").setViewName("PaginaPrincipal");
-        registro.addViewController("/registro").setViewName("usuario/RegistroUsuario");
+        //registro.addViewController("/registro").setViewName("usuario/RegistroUsuario");
         registro.addViewController("/login").setViewName("usuario/login");
     }
 }
