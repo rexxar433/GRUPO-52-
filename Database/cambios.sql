@@ -15,5 +15,5 @@ UPDATE usuario SET contrasena = '$2a$10$/8NHPLc5NTCqcaMd6rIeyOyxgplWk.BGMhWjyz3t
 
 UPDATE pelicula set imagen = 'Spider-Man.jpg' where id=1;
 UPDATE pelicula set imagen = 'spider-man-2.jpg' where id=2;
-UPDATE pelicula set imagen = 'RBD.jp' where id=3;
+UPDATE pelicula set imagen = 'RBD.jpg' where id=3;
 UPDATE pelicula set imagen = 'BuscandoNemo.jpg' where id=4;
