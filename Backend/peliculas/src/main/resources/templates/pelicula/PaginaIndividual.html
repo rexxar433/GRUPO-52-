@@ -45,11 +45,11 @@
 <div class="mt-4 container">
     <h1 class="text-center text-light" th:text="${pelicula.titulo}"></h1>
     <div class="row">
-        <div class="col imaginacion">
+        <div class="mt-4 col">
             <img th:src="@{/img/pelicula/}+${pelicula.imagen}" class="card-img-top" alt="guion">
         </div>
         <div class="col">
-            <div class="card">
+            <div class="bg-dark text-light">
                 <div class="mt-4 container">
                     <h5 class="mb-3">Puntuacion: <span th:text="${pelicula.puntuacion}"></span></h5>
                     <h5 class="mb-1">Argumento:</h5>
