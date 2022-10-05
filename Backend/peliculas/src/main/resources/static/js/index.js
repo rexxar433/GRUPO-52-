@@ -1,1 +1,0 @@
-// Aqui va el respectivo javascript de la pagina de Inicio
